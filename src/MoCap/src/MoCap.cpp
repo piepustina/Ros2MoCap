@@ -1,3 +1,4 @@
+// RoS2 Node that handles the connection with the NatNet server (Motive)
 #include <cstdio>
 
 int main(int argc, char ** argv)
