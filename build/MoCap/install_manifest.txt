@@ -1,0 +1,16 @@
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/lib/MoCap/MoCap
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/ament_index/resource_index/package_run_dependencies/MoCap
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/ament_index/resource_index/parent_prefix_path/MoCap
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/environment/ament_prefix_path.sh
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/environment/ament_prefix_path.dsv
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/environment/path.sh
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/environment/path.dsv
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/local_setup.bash
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/local_setup.sh
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/local_setup.zsh
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/local_setup.dsv
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/package.dsv
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/ament_index/resource_index/packages/MoCap
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/cmake/MoCapConfig.cmake
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/cmake/MoCapConfig-version.cmake
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/MoCap/share/MoCap/package.xml

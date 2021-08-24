@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/MoCap/src/MoCap.cpp
+cstdio
+-
+
