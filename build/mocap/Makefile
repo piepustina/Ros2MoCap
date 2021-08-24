@@ -206,6 +206,33 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/MessageParser.o: src/MessageParser.cpp.o
+
+.PHONY : src/MessageParser.o
+
+# target to build an object file
+src/MessageParser.cpp.o:
+	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MessageParser.cpp.o
+.PHONY : src/MessageParser.cpp.o
+
+src/MessageParser.i: src/MessageParser.cpp.i
+
+.PHONY : src/MessageParser.i
+
+# target to preprocess a source file
+src/MessageParser.cpp.i:
+	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MessageParser.cpp.i
+.PHONY : src/MessageParser.cpp.i
+
+src/MessageParser.s: src/MessageParser.cpp.s
+
+.PHONY : src/MessageParser.s
+
+# target to generate assembly for a file
+src/MessageParser.cpp.s:
+	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MessageParser.cpp.s
+.PHONY : src/MessageParser.cpp.s
+
 src/MoCap.o: src/MoCap.cpp.o
 
 .PHONY : src/MoCap.o
@@ -233,6 +260,33 @@ src/MoCap.cpp.s:
 	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MoCap.cpp.s
 .PHONY : src/MoCap.cpp.s
 
+src/MoCapNatNetClient.o: src/MoCapNatNetClient.cpp.o
+
+.PHONY : src/MoCapNatNetClient.o
+
+# target to build an object file
+src/MoCapNatNetClient.cpp.o:
+	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o
+.PHONY : src/MoCapNatNetClient.cpp.o
+
+src/MoCapNatNetClient.i: src/MoCapNatNetClient.cpp.i
+
+.PHONY : src/MoCapNatNetClient.i
+
+# target to preprocess a source file
+src/MoCapNatNetClient.cpp.i:
+	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.i
+.PHONY : src/MoCapNatNetClient.cpp.i
+
+src/MoCapNatNetClient.s: src/MoCapNatNetClient.cpp.s
+
+.PHONY : src/MoCapNatNetClient.s
+
+# target to generate assembly for a file
+src/MoCapNatNetClient.cpp.s:
+	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.s
+.PHONY : src/MoCapNatNetClient.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -249,9 +303,15 @@ help:
 	@echo "... mocap"
 	@echo "... mocap_uninstall"
 	@echo "... uninstall"
+	@echo "... src/MessageParser.o"
+	@echo "... src/MessageParser.i"
+	@echo "... src/MessageParser.s"
 	@echo "... src/MoCap.o"
 	@echo "... src/MoCap.i"
 	@echo "... src/MoCap.s"
+	@echo "... src/MoCapNatNetClient.o"
+	@echo "... src/MoCapNatNetClient.i"
+	@echo "... src/MoCapNatNetClient.s"
 .PHONY : help
 
 

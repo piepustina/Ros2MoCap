@@ -76,12 +76,12 @@ clean: CMakeFiles/uninstall.dir/clean
 CMakeFiles/mocap.dir/all:
 	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/depend
 	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles --progress-num=1,2 "Built target mocap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles --progress-num=1,2,3,4 "Built target mocap"
 .PHONY : CMakeFiles/mocap.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/mocap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mocap.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles 0
 .PHONY : CMakeFiles/mocap.dir/rule

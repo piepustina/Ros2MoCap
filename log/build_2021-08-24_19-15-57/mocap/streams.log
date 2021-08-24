@@ -1,0 +1,24 @@
+[0.015s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.037s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.055s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.193s] CMake Error at CMakeLists.txt:18 (find_package):
+[0.193s]   By not providing "FindMoCapNatNetClient.cmake" in CMAKE_MODULE_PATH this
+[0.193s]   project has asked CMake to find a package configuration file provided by
+[0.193s]   "MoCapNatNetClient", but CMake did not find one.
+[0.194s] 
+[0.194s]   Could not find a package configuration file provided by "MoCapNatNetClient"
+[0.194s]   with any of the following names:
+[0.194s] 
+[0.194s]     MoCapNatNetClientConfig.cmake
+[0.194s]     mocapnatnetclient-config.cmake
+[0.194s] 
+[0.194s]   Add the installation prefix of "MoCapNatNetClient" to CMAKE_PREFIX_PATH or
+[0.194s]   set "MoCapNatNetClient_DIR" to a directory containing one of the above
+[0.194s]   files.  If "MoCapNatNetClient" provides a separate development package or
+[0.194s]   SDK, be sure it has been installed.
+[0.194s] 
+[0.194s] 
+[0.194s] -- Configuring incomplete, errors occurred!
+[0.194s] See also "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles/CMakeOutput.log".
+[0.195s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.197s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

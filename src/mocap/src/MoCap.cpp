@@ -20,6 +20,10 @@ int main(int argc, char ** argv)
   //Prova creazione MoCapNatNetClient
   MoCapNatNetClient* c = new MoCapNatNetClient(1, 100, 1000);
 
+  printf("Giorno %d\n", c->getDay());
+
+  printf("Distruggo il NatNet client...");
+  delete c;
   printf("Prova nodo...\n");
   return 0;
 }
