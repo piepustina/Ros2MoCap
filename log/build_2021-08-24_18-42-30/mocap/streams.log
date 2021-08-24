@@ -1,0 +1,31 @@
+[0.015s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.036s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.055s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.251s] -- Configuring done
+[0.254s] -- Generating done
+[0.254s] -- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap
+[0.271s] [35m[1mScanning dependencies of target mocap[0m
+[0.279s] [ 50%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[0.308s] [100%] [32m[1mLinking CXX executable mocap[0m
+[0.370s] [100%] Built target mocap
+[0.380s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.410s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap
+[0.417s] -- Install configuration: ""
+[0.417s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/lib/mocap/mocap
+[0.417s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/lib/mocap/mocap" to ""
+[0.417s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/package_run_dependencies/mocap
+[0.417s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/parent_prefix_path/mocap
+[0.417s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/ament_prefix_path.sh
+[0.418s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/ament_prefix_path.dsv
+[0.418s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/path.sh
+[0.418s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/path.dsv
+[0.418s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.bash
+[0.418s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.sh
+[0.419s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.zsh
+[0.419s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.dsv
+[0.419s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/package.dsv
+[0.419s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/packages/mocap
+[0.419s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/cmake/mocapConfig.cmake
+[0.419s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/cmake/mocapConfig-version.cmake
+[0.419s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/package.xml
+[0.421s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap

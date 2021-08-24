@@ -10,7 +10,10 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap"
   "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet"
+  "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MessageParser"
+  "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient"
   )
 
 # Targets to which this target links.

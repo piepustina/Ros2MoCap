@@ -16,11 +16,19 @@ find_package(ament_cmake REQUIRED)
 
 #Add the packages
 
-#Include the headers for the NatNet client
+#Include the headers for the MoCap class
+include_directories(include/MoCap)
+#Include the headers for the NatNet SDK
 include_directories(include/NatNet)
+#Include the headers for the MessageParser class
+include_directories(include/MessageParser)
+#Include the headers for the NatNet client
+include_directories(include/MoCapNatNetClient)
+
+
+
 #Add the directory where the libraries are located
 link_directories(${CMAKE_SOURCE_DIR}/lib)
-
 
 #Create the executable
 add_executable(mocap src/MoCap.cpp)

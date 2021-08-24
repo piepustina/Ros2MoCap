@@ -1,1 +1,0 @@
-// This class implements a NatNet client

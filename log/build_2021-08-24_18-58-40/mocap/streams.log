@@ -1,0 +1,15 @@
+[0.016s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.048s] [35m[1mScanning dependencies of target mocap[0m
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[0.073s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.073s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:21:21:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kc[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[0.073s]    21 |   MoCapNatNetClient [01;35m[Kc[m[K = MoCapNatNetClient(1, 100, 1000);
+[0.073s]       |                     [01;35m[K^[m[K
+[0.087s] [100%] [32m[1mLinking CXX executable mocap[0m
+[0.142s] /usr/bin/ld: CMakeFiles/mocap.dir/src/MoCap.cpp.o: in function `main':
+[0.142s] MoCap.cpp:(.text+0x77): undefined reference to `MoCapNatNetClient::MoCapNatNetClient(int, int, int)'
+[0.142s] collect2: error: ld returned 1 exit status
+[0.143s] make[2]: *** [CMakeFiles/mocap.dir/build.make:84: mocap] Error 1
+[0.143s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+[0.143s] make: *** [Makefile:141: all] Error 2
+[0.145s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

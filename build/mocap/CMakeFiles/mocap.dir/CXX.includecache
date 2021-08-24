@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h
+
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetCAPI.h
 NatNetTypes.h
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetTypes.h
@@ -30,5 +32,7 @@ NatNetTypes.h
 NatNetCAPI.h
 -
 NatNetClient.h
+-
+MoCapNatNetClient.h
 -
 
