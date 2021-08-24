@@ -1,0 +1,11 @@
+[0.015s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.031s] CMake Error at CMakeLists.txt:45:
+[0.031s]   Parse error.  Expected "(", got newline with text "
+[0.032s] 
+[0.032s]   ".
+[0.032s] 
+[0.032s] 
+[0.032s] -- Configuring incomplete, errors occurred!
+[0.032s] See also "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles/CMakeOutput.log".
+[0.033s] make: *** [Makefile:326: cmake_check_build_system] Error 1
+[0.035s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

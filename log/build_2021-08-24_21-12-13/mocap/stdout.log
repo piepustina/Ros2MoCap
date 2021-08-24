@@ -1,0 +1,10 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap
+[35m[1mScanning dependencies of target mocap[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MessageParser.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mocap[0m

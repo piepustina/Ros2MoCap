@@ -3,7 +3,7 @@
 #include "MoCapNatNetClient.h"
 #include "MessageParser.h"
  
-// NatNetClient constructor
+// MoCapNatNetClient constructor
 MoCapNatNetClient::MoCapNatNetClient(int year, int month, int day)
 {
     SetDate(year, month, day);
@@ -14,6 +14,7 @@ MoCapNatNetClient::MoCapNatNetClient(int year, int month, int day)
     printf("Builded message parser...");
 }
 
+// Distructor
 MoCapNatNetClient::~MoCapNatNetClient()
 {
     delete parser;

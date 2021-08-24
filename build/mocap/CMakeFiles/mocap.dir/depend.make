@@ -5,6 +5,8 @@ CMakeFiles/mocap.dir/src/MessageParser.cpp.o: /home/pietro/Scrivania/TESI/ROS2/M
 CMakeFiles/mocap.dir/src/MessageParser.cpp.o: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MessageParser.cpp
 
 CMakeFiles/mocap.dir/src/MoCap.cpp.o: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MessageParser/MessageParser.h
+CMakeFiles/mocap.dir/src/MoCap.cpp.o: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/MoCap.h
+CMakeFiles/mocap.dir/src/MoCap.cpp.o: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/myconfig.h
 CMakeFiles/mocap.dir/src/MoCap.cpp.o: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h
 CMakeFiles/mocap.dir/src/MoCap.cpp.o: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetCAPI.h
 CMakeFiles/mocap.dir/src/MoCap.cpp.o: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetClient.h

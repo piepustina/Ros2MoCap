@@ -1,7 +1,7 @@
 #ifndef MOCAP_H
-#define MESSAGEPARSER_H
+#define MOCAP_H
  
-class MessageParser
+class MoCap
 {
 // Private attributes and methods
 private:
@@ -9,7 +9,7 @@ private:
 // Public attributes and methods
 public:
     // Definition of the construtors
-    MessageParser();
+    MoCap();
  
     // Getters
     

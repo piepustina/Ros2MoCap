@@ -1,0 +1,11 @@
+[0.014s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.047s] [35m[1mScanning dependencies of target mocap[0m
+[0.056s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[0.066s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:10:[m[K [01;31m[Kfatal error: [m[Ktao/json.hpp: No such file or directory
+[0.066s]    16 | #include [01;31m[K<tao/json.hpp>[m[K
+[0.067s]       |          [01;31m[K^~~~~~~~~~~~~~[m[K
+[0.067s] compilation terminated.
+[0.067s] make[2]: *** [CMakeFiles/mocap.dir/build.make:63: CMakeFiles/mocap.dir/src/MoCap.cpp.o] Error 1
+[0.067s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+[0.067s] make: *** [Makefile:141: all] Error 2
+[0.069s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target mocap[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:10:[m[K [01;31m[Kfatal error: [m[Ktao/json.hpp: No such file or directory
+   16 | #include [01;31m[K<tao/json.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/mocap.dir/build.make:63: CMakeFiles/mocap.dir/src/MoCap.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

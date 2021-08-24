@@ -1,0 +1,11 @@
+[0.013s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.032s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.049s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.183s] CMake Error at CMakeLists.txt:37 (target_include_directories):
+[0.183s]   target_include_directories called with incorrect number of arguments
+[0.183s] 
+[0.183s] 
+[0.243s] -- Configuring incomplete, errors occurred!
+[0.244s] See also "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles/CMakeOutput.log".
+[0.246s] make: *** [Makefile:326: cmake_check_build_system] Error 1
+[0.248s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

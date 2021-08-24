@@ -1,0 +1,15 @@
+[0.013s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.040s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.061s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.245s] -- Configuring done
+[0.250s] -- Generating done
+[0.251s] -- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap
+[0.275s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[0.286s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:10:[m[K [01;31m[Kfatal error: [m[Klibconfig.h++: No such file or directory
+[0.286s]    16 | #include [01;31m[K<libconfig.h++>[m[K
+[0.286s]       |          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[0.286s] compilation terminated.
+[0.286s] make[2]: *** [CMakeFiles/mocap.dir/build.make:63: CMakeFiles/mocap.dir/src/MoCap.cpp.o] Error 1
+[0.287s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+[0.287s] make: *** [Makefile:141: all] Error 2
+[0.289s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

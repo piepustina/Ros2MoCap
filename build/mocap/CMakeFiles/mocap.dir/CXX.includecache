@@ -8,6 +8,10 @@
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MessageParser/MessageParser.h
 
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/MoCap.h
+
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/myconfig.h
+
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h
 MessageParser.h
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MessageParser.h
@@ -29,6 +33,10 @@ stddef.h
 -
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp
+MoCap.h
+-
+myconfig.h
+-
 cstdio
 -
 NatNetTypes.h
