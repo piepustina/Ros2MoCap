@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/mocap.dir/src/MoCap.cpp.o  -o mocap 
+/usr/bin/c++     CMakeFiles/mocap.dir/src/MoCap.cpp.o  -o mocap   -L/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/lib  -Wl,-rpath,/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/lib: -lNatNet 

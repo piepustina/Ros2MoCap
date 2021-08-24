@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/mocap.dir/src/MoCap.cpp.o: in function `main':
+MoCap.cpp:(.text+0x2a): undefined reference to `NatNet_GetVersion'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/mocap.dir/build.make:84: mocap] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,5 +1,0 @@
-[0.015s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/MoCap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/MoCap -- -j8 -l8
-[0.031s] CMake Error: The source directory "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/MoCap" does not exist.
-[0.031s] Specify --help for usage, or press the help button on the CMake GUI.
-[0.032s] make: *** [Makefile:266: cmake_check_build_system] Error 1
-[0.035s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/MoCap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/MoCap -- -j8 -l8

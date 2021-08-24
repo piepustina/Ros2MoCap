@@ -1,0 +1,13 @@
+[0.015s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.034s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.053s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.231s] -- Configuring done
+[0.234s] -- Generating done
+[0.235s] -- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap
+[0.259s] [ 50%] [32m[1mLinking CXX executable mocap[0m
+[0.278s] /usr/bin/ld: cannot find -lNatNet
+[0.278s] collect2: error: ld returned 1 exit status
+[0.279s] make[2]: *** [CMakeFiles/mocap.dir/build.make:84: mocap] Error 1
+[0.280s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+[0.280s] make: *** [Makefile:141: all] Error 2
+[0.281s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

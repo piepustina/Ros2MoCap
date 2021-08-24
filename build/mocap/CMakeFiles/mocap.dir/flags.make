@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet 
 

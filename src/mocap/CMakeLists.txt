@@ -16,9 +16,17 @@ find_package(ament_cmake REQUIRED)
 
 #Add the packages
 
+#Include the headers for the NatNet client
+include_directories(include/NatNet)
+#Add the directory where the libraries are located
+link_directories(${CMAKE_SOURCE_DIR}/lib)
+
+
 #Create the executable
 add_executable(mocap src/MoCap.cpp)
 
+#Add all the used libraries to the project
+target_link_libraries(mocap NatNet)#in the folder ./lib there must be a file libNatNet.so
 
 install(TARGETS mocap
   DESTINATION lib/${PROJECT_NAME})

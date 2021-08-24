@@ -1,0 +1,9 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+CMake Error at CMakeLists.txt:21 (link_directores):
+  Unknown CMake command "link_directores".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles/CMakeOutput.log".
+make: *** [Makefile:266: cmake_check_build_system] Error 1

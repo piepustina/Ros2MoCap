@@ -6,7 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetCAPI.h
+NatNetTypes.h
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetTypes.h
+
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetClient.h
+NatNetTypes.h
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetTypes.h
+
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetTypes.h
+stdint.h
+-
+string.h
+-
+stddef.h
+-
+
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp
 cstdio
+-
+NatNetTypes.h
+-
+NatNetCAPI.h
+-
+NatNetClient.h
 -
 

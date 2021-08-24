@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/MoCap.dir/src/MoCap.cpp.o  -o MoCap 

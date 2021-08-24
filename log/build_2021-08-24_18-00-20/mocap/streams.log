@@ -1,0 +1,12 @@
+[0.017s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.041s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.059s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.206s] CMake Error at CMakeLists.txt:22 (TARGET_LINK_LIBRARIES):
+[0.207s]   Cannot specify link libraries for target "mocap" which is not built by this
+[0.207s]   project.
+[0.207s] 
+[0.207s] 
+[0.207s] -- Configuring incomplete, errors occurred!
+[0.207s] See also "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap/CMakeFiles/CMakeOutput.log".
+[0.208s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.210s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
