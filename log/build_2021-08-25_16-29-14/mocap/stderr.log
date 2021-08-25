@@ -1,0 +1,28 @@
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In function ‘[01m[Kvoid dataFrameHandler(sFrameOfMocapData*, void*)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:88:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   88 | void NATNET_CALLCONV dataFrameHandler([01;35m[KsFrameOfMocapData* data[m[K, void* pUserData)
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:88:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpUserData[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   88 | void NATNET_CALLCONV dataFrameHandler(sFrameOfMocapData* data, [01;35m[Kvoid* pUserData[m[K)
+      |                                                                [01;35m[K~~~~~~^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In member function ‘[01m[Kvoid MoCapNatNetClient::getDataDescription()[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:99:60:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint NatNetClient::GetDataDescriptions(sDataDescriptions**)[m[K’ is deprecated: This method is deprecated; use GetDataDescriptionList, which returns an ErrorCode instead of the number of descriptions (which is still available as sDataDescriptions::nDataDescriptions). [[01;35m[K-Wdeprecated-declarations[m[K]
+   99 |     int iResult = g_pClient->GetDataDescriptions(&pDataDefs[01;35m[K)[m[K;
+      |                                                            [01;35m[K^[m[K
+In file included from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h:10[m[K,
+                 from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:3[m[K:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetClient.h:72:9:[m[K [01;36m[Knote: [m[Kdeclared here
+   72 |     int [01;36m[KGetDataDescriptions[m[K( sDataDescriptions** ppDataDescriptions );
+      |         [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:115:41:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpMS[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  115 |                  sMarkerSetDescription* [01;35m[KpMS[m[K = pDataDefs->arrDataDescriptions[i].Data.MarkerSetDescription;
+      |                                         [01;35m[K^~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:120:40:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpRB[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  120 |                 sRigidBodyDescription* [01;35m[KpRB[m[K = pDataDefs->arrDataDescriptions[i].Data.RigidBodyDescription;
+      |                                        [01;35m[K^~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:125:39:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpSK[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  125 |                 sSkeletonDescription* [01;35m[KpSK[m[K = pDataDefs->arrDataDescriptions[i].Data.SkeletonDescription;
+      |                                       [01;35m[K^~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:130:41:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpFP[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  130 |                 sForcePlateDescription* [01;35m[KpFP[m[K = pDataDefs->arrDataDescriptions[i].Data.ForcePlateDescription;
+      |                                         [01;35m[K^~~[m[K

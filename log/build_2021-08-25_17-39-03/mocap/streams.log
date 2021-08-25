@@ -1,0 +1,12 @@
+[0.012s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.044s] [35m[1mScanning dependencies of target mocap[0m
+[0.053s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[0.236s] [ 50%] [32m[1mLinking CXX executable mocap[0m
+[0.291s] /usr/bin/ld: CMakeFiles/mocap.dir/src/MoCap.cpp.o: in function `main':
+[0.291s] MoCap.cpp:(.text+0x73): undefined reference to `stdscr'
+[0.291s] /usr/bin/ld: MoCap.cpp:(.text+0x7b): undefined reference to `wgetch'
+[0.291s] collect2: error: ld returned 1 exit status
+[0.292s] make[2]: *** [CMakeFiles/mocap.dir/build.make:114: mocap] Error 1
+[0.292s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+[0.292s] make: *** [Makefile:141: all] Error 2
+[0.294s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

@@ -1,0 +1,24 @@
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In constructor ‘[01m[KMoCapNatNetClient::MoCapNatNetClient()[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:17:91:[m[K [01;35m[Kwarning: [m[K‘[01m[KNatNetClient::NatNetClient(int)[m[K’ is deprecated: The constructor specifying connection type is deprecated; use the sNatNetClientConnectParams::connectionType field instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+   17 |     if (SERVER_CONNECTION_TYPE == 0) g_pClient = new NatNetClient(ConnectionType_Multicast[01;35m[K)[m[K;
+      |                                                                                           [01;35m[K^[m[K
+In file included from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h:10[m[K,
+                 from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:3[m[K:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetClient.h:51:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   51 |     explicit [01;36m[KNatNetClient[m[K( int connectionType );
+      |              [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:18:61:[m[K [01;35m[Kwarning: [m[K‘[01m[KNatNetClient::NatNetClient(int)[m[K’ is deprecated: The constructor specifying connection type is deprecated; use the sNatNetClientConnectParams::connectionType field instead. [[01;35m[K-Wdeprecated-declarations[m[K]
+   18 |     else g_pClient = new NatNetClient(ConnectionType_Unicast[01;35m[K)[m[K;
+      |                                                             [01;35m[K^[m[K
+In file included from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h:10[m[K,
+                 from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:3[m[K:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetClient.h:51:14:[m[K [01;36m[Knote: [m[Kdeclared here
+   51 |     explicit [01;36m[KNatNetClient[m[K( int connectionType );
+      |              [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In function ‘[01m[Kvoid dataFrameHandler(sFrameOfMocapData*, void*)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:75:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   75 | void NATNET_CALLCONV dataFrameHandler([01;35m[KsFrameOfMocapData* data[m[K, void* pUserData)
+      |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:75:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpUserData[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   75 | void NATNET_CALLCONV dataFrameHandler(sFrameOfMocapData* data, [01;35m[Kvoid* pUserData[m[K)
+      |                                                                [01;35m[K~~~~~~^~~~~~~~~[m[K

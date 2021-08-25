@@ -1,16 +1,10 @@
 // RoS2 Node that handles the connection with the NatNet server (Motive)
 #include <MoCap.h>
 
-// Include the configuration file
-#include <myconfig.h>
-
 // Include standard libraries
-#include <cstdio>
+#include <stdio.h>
+#include <unistd.h>
 
-// To move to the client
-#include <NatNetTypes.h>
-#include <NatNetCAPI.h>
-#include <NatNetClient.h>
 
 // Include the MoCap NatNet client
 #include <MoCapNatNetClient.h>
@@ -23,19 +17,31 @@ int main(int argc, char ** argv)
   (void) argc;
   (void) argv;
 
-  unsigned char ver[4];
-  NatNet_GetVersion( ver );
-  printf( "NatNet Sample Client (NatNet ver. %d.%d.%d.%d)\n", ver[0], ver[1], ver[2], ver[3] );
+  //Create the MoCapNatNetClient
+  MoCapNatNetClient* c = new MoCapNatNetClient();
 
-  //Prova creazione MoCapNatNetClient
-  MoCapNatNetClient* c = new MoCapNatNetClient(1, 100, 1000);
+  // Try to connect the client 
+  int retCode = c->connect();
+  printf("Return code is : %d", retCode);
 
-  printf("Giorno %d\n", c->getDay());
+  // Get the data description from the server
+  c->getDataDescription();
 
-  printf("Prova %s", SERVER_ADDRESS);
+  // Disconnect the client
+  //c->disconnect();
+  
+  //printf("Distruggo il NatNet client...\n\n");
+  //delete c;
 
-  printf("Distruggo il NatNet client...");
-  delete c;
-  printf("Prova nodo...\n");
+  // Ready to receive marker stream!
+	printf("\nClient is connected to server and listening for data...\n");
+	bool bExit = false;
+  char choice;
+	while ( !bExit )
+	{
+    scanf(" %c", &choice);
+		if (choice == 'q') bExit = true;
+  }
+
   return 0;
 }

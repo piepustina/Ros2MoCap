@@ -1,0 +1,61 @@
+[0.012s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.042s] [35m[1mScanning dependencies of target mocap[0m
+[0.052s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o[0m
+[0.188s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In constructor ‘[01m[KMoCapNatNetClient::MoCapNatNetClient()[m[K’:
+[0.188s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:35:30:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 2 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+[0.188s]    35 |     printf("serveraddress : [01;35m[K%s[m[K\n", [32m[Kg_connectParams.serverCommandPort[m[K);
+[0.188s]       |                             [01;35m[K~^[m[K     [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.189s]       |                              [01;35m[K|[m[K                     [32m[K|[m[K
+[0.189s]       |                              [01;35m[Kchar*[m[K                 [32m[Kint[m[K
+[0.189s]       |                             [32m[K%d[m[K
+[0.189s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In function ‘[01m[Kvoid dataFrameHandler(sFrameOfMocapData*, void*)[m[K’:
+[0.189s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:90:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdata[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.189s]    90 | void NATNET_CALLCONV dataFrameHandler([01;35m[KsFrameOfMocapData* data[m[K, void* pUserData)
+[0.189s]       |                                       [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[0.189s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:90:70:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KpUserData[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.189s]    90 | void NATNET_CALLCONV dataFrameHandler(sFrameOfMocapData* data, [01;35m[Kvoid* pUserData[m[K)
+[0.189s]       |                                                                [01;35m[K~~~~~~^~~~~~~~~[m[K
+[0.189s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In member function ‘[01m[Kvoid MoCapNatNetClient::getDataDescription()[m[K’:
+[0.190s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:101:60:[m[K [01;35m[Kwarning: [m[K‘[01m[Kint NatNetClient::GetDataDescriptions(sDataDescriptions**)[m[K’ is deprecated: This method is deprecated; use GetDataDescriptionList, which returns an ErrorCode instead of the number of descriptions (which is still available as sDataDescriptions::nDataDescriptions). [[01;35m[K-Wdeprecated-declarations[m[K]
+[0.190s]   101 |     int iResult = g_pClient->GetDataDescriptions(&pDataDefs[01;35m[K)[m[K;
+[0.190s]       |                                                            [01;35m[K^[m[K
+[0.190s] In file included from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h:10[m[K,
+[0.190s]                  from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:3[m[K:
+[0.190s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetClient.h:72:9:[m[K [01;36m[Knote: [m[Kdeclared here
+[0.190s]    72 |     int [01;36m[KGetDataDescriptions[m[K( sDataDescriptions** ppDataDescriptions );
+[0.190s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.190s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:117:41:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpMS[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.190s]   117 |                  sMarkerSetDescription* [01;35m[KpMS[m[K = pDataDefs->arrDataDescriptions[i].Data.MarkerSetDescription;
+[0.190s]       |                                         [01;35m[K^~~[m[K
+[0.190s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:122:40:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpRB[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.190s]   122 |                 sRigidBodyDescription* [01;35m[KpRB[m[K = pDataDefs->arrDataDescriptions[i].Data.RigidBodyDescription;
+[0.190s]       |                                        [01;35m[K^~~[m[K
+[0.190s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:127:39:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpSK[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.190s]   127 |                 sSkeletonDescription* [01;35m[KpSK[m[K = pDataDefs->arrDataDescriptions[i].Data.SkeletonDescription;
+[0.190s]       |                                       [01;35m[K^~~[m[K
+[0.190s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:132:41:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KpFP[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[0.190s]   132 |                 sForcePlateDescription* [01;35m[KpFP[m[K = pDataDefs->arrDataDescriptions[i].Data.ForcePlateDescription;
+[0.191s]       |                                         [01;35m[K^~~[m[K
+[0.233s] [ 50%] [32m[1mLinking CXX executable mocap[0m
+[0.296s] [100%] Built target mocap
+[0.305s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
+[0.340s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap
+[0.347s] -- Install configuration: ""
+[0.347s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/lib/mocap/mocap
+[0.347s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/lib/mocap/mocap" to ""
+[0.347s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/package_run_dependencies/mocap
+[0.347s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/parent_prefix_path/mocap
+[0.347s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/ament_prefix_path.sh
+[0.347s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/ament_prefix_path.dsv
+[0.347s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/path.sh
+[0.347s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/path.dsv
+[0.347s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.bash
+[0.348s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.sh
+[0.348s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.zsh
+[0.348s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.dsv
+[0.348s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/package.dsv
+[0.348s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/packages/mocap
+[0.348s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/cmake/mocapConfig.cmake
+[0.348s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/cmake/mocapConfig-version.cmake
+[0.348s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/package.xml
+[0.350s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap

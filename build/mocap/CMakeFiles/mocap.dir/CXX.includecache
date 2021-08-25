@@ -10,11 +10,19 @@
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/MoCap.h
 
-/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/myconfig.h
-
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h
 MessageParser.h
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MessageParser.h
+string
+-
+iostream
+-
+NatNetTypes.h
+-
+NatNetCAPI.h
+-
+NatNetClient.h
+-
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/NatNet/NatNetCAPI.h
 NatNetTypes.h
@@ -35,15 +43,9 @@ stddef.h
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp
 MoCap.h
 -
-myconfig.h
+stdio.h
 -
-cstdio
--
-NatNetTypes.h
--
-NatNetCAPI.h
--
-NatNetClient.h
+unistd.h
 -
 MoCapNatNetClient.h
 -
