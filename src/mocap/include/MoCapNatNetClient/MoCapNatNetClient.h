@@ -15,14 +15,14 @@ using namespace std;
 // Handler to receive the data from the server
 void NATNET_CALLCONV dataFrameHandler(sFrameOfMocapData* data, void* pUserData);
 
-class MoCapNatNetClient
+class MoCapNatNetClient:private NatNetClient
 {
 // Private attributes and methods
 private:
     MessageParser* parser;
-    NatNetClient* g_pClient = NULL;
     sNatNetClientConnectParams g_connectParams;
     sServerDescription g_serverDescription;
+    int g_analogSamplesPerMocapFrame = 0;
     
 // Public attributes and methods
 public:
@@ -38,8 +38,12 @@ public:
 
     // Method to get the data description from the server
     void getDataDescription();
+
+    double SecondsSinceHostTimestamp( uint64_t hostTimestamp );
     
     // Getters
+    sServerDescription getServerDescription();
+    int getAnalogSamplesPerMocapFrame();
 
     // Setters
     

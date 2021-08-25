@@ -10,6 +10,8 @@
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/MoCap.h
 
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCap/myconfig.h
+
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MoCapNatNetClient.h
 MessageParser.h
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/include/MoCapNatNetClient/MessageParser.h
@@ -56,12 +58,22 @@ unistd.h
 -
 MoCapNatNetClient.h
 -
-
+-
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp
 cstdio
 =======
 >>>>>>> main
 >>>>>>> Stashed changes
+-
+MoCapNatNetClient.h
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.h
+MessageParser.h
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MessageParser.h
+myconfig.h
+-
+
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp
+cstdio
 -
 MoCapNatNetClient.h
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.h
