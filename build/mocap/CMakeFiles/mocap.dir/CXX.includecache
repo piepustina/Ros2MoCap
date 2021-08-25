@@ -42,11 +42,31 @@ stddef.h
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp
 MoCap.h
+<<<<<<< Updated upstream
 -
 stdio.h
 -
 unistd.h
+=======
+-
+stdio.h
+-
+unistd.h
+<<<<<<< HEAD
 -
 MoCapNatNetClient.h
+-
+
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp
+cstdio
+=======
+>>>>>>> main
+>>>>>>> Stashed changes
+-
+MoCapNatNetClient.h
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.h
+MessageParser.h
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MessageParser.h
+myconfig.h
 -
 
