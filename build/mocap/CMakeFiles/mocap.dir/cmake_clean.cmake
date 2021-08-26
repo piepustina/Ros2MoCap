@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mocap.dir/src/MessageParser.cpp.o"
   "CMakeFiles/mocap.dir/src/MoCap.cpp.o"
   "CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o"
   "mocap"

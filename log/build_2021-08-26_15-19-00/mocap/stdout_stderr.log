@@ -1,0 +1,49 @@
+[35m[1mScanning dependencies of target mocap[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In function ‘[01m[Kvoid dataFrameHandler(sFrameOfMocapData*, void*)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:234:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbOccluded[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  234 |     bool [01;35m[KbOccluded[m[K;     // marker was not visible (occluded) in this frame
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:235:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbPCSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  235 |     bool [01;35m[KbPCSolved[m[K;     // reported position provided by point cloud solve
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:236:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbModelSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  236 |     bool [01;35m[KbModelSolved[m[K;  // reported position provided by model solve
+      |          [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:237:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbHasModel[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  237 |     bool [01;35m[KbHasModel[m[K;     // marker has an associated asset in the data stream
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In member function ‘[01m[Kvoid MoCapNatNetClient::getDataDescription()[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:328:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kresponse[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  328 |     void* [01;35m[Kresponse[m[K;
+      |           [01;35m[K^~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:329:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KretCode[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  329 |  int [01;35m[KretCode[m[K;
+      |      [01;35m[K^~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:330:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnBytes[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  330 |     int [01;35m[KnBytes[m[K = 0;
+      |         [01;35m[K^~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:331:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kret[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  331 |     ErrorCode [01;35m[Kret[m[K = ErrorCode_OK;
+      |               [01;35m[K^~~[m[K
+[100%] [32m[1mLinking CXX executable mocap[0m
+[100%] Built target mocap
+-- Install configuration: ""
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/lib/mocap/mocap
+-- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/lib/mocap/mocap" to ""
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/package_run_dependencies/mocap
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/parent_prefix_path/mocap
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/ament_prefix_path.sh
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/path.sh
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/environment/path.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.bash
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.sh
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.zsh
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/local_setup.dsv
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/package.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/ament_index/resource_index/packages/mocap
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/cmake/mocapConfig.cmake
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/cmake/mocapConfig-version.cmake
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap/share/mocap/package.xml

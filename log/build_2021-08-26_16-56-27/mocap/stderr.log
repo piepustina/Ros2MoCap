@@ -1,0 +1,52 @@
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:[m[K In member function ‘[01m[Kvoid MoCap::sendRigidBodyMessage(float, bool, float, float, float, float, float, float, float, float)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KID[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | void MoCap::sendRigidBodyMessage([01;35m[Kfloat ID[m[K, bool bTrackingValid, float meanError, float x, float y, float z, float qx, float qy, float qz, float qw)
+      |                                  [01;35m[K~~~~~~^~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbTrackingValid[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | void MoCap::sendRigidBodyMessage(float ID, [01;35m[Kbool bTrackingValid[m[K, float meanError, float x, float y, float z, float qx, float qy, float qz, float qw)
+      |                                            [01;35m[K~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KmeanError[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | p::sendRigidBodyMessage(float ID, bool bTrackingValid, [01;35m[Kfloat meanError[m[K, float x, float y, float z, float qx, float qy, float qz, float qw)
+      |                                                        [01;35m[K~~~~~~^~~~~~~~~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | essage(float ID, bool bTrackingValid, float meanError, [01;35m[Kfloat x[m[K, float y, float z, float qx, float qy, float qz, float qw)
+      |                                                        [01;35m[K~~~~~~^[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:97:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | oat ID, bool bTrackingValid, float meanError, float x, [01;35m[Kfloat y[m[K, float z, float qx, float qy, float qz, float qw)
+      |                                                        [01;35m[K~~~~~~^[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:106:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kz[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | ool bTrackingValid, float meanError, float x, float y, [01;35m[Kfloat z[m[K, float qx, float qy, float qz, float qw)
+      |                                                        [01;35m[K~~~~~~^[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:115:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | kingValid, float meanError, float x, float y, float z, [01;35m[Kfloat qx[m[K, float qy, float qz, float qw)
+      |                                                        [01;35m[K~~~~~~^~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:125:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 |  float meanError, float x, float y, float z, float qx, [01;35m[Kfloat qy[m[K, float qz, float qw)
+      |                                                        [01;35m[K~~~~~~^~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:135:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqz[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | t meanError, float x, float y, float z, float qx, float qy, [01;35m[Kfloat qz[m[K, float qw)
+      |                                                             [01;35m[K~~~~~~^~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:145:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | oat x, float y, float z, float qx, float qy, float qz, [01;35m[Kfloat qw[m[K)
+      |                                                        [01;35m[K~~~~~~^~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In function ‘[01m[Kvoid dataFrameHandler(sFrameOfMocapData*, void*)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:225:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbOccluded[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  225 |     bool [01;35m[KbOccluded[m[K;     // marker was not visible (occluded) in this frame
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:226:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbPCSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  226 |     bool [01;35m[KbPCSolved[m[K;     // reported position provided by point cloud solve
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:227:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbModelSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  227 |     bool [01;35m[KbModelSolved[m[K;  // reported position provided by model solve
+      |          [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:228:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbHasModel[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  228 |     bool [01;35m[KbHasModel[m[K;     // marker has an associated asset in the data stream
+      |          [01;35m[K^~~~~~~~~[m[K

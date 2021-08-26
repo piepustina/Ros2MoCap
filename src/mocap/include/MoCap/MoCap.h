@@ -1,6 +1,10 @@
 #ifndef MOCAP_H
 #define MOCAP_H
- 
+
+#include <vector>
+#include <NatNetTypes.h>
+
+using namespace std;
 class MoCap
 {
 // Private attributes and methods
@@ -10,6 +14,9 @@ private:
 public:
     // Definition of the construtors
     MoCap();
+
+    // Send methods
+    void sendRigidBodyMessage(sRigidBodyData* bodies, int nRigidBodies);
  
     // Getters
     

@@ -1,0 +1,66 @@
+[35m[1mScanning dependencies of target mocap[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:[m[K In function ‘[01m[Kvoid dataFrameHandler(sFrameOfMocapData*, void*)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:228:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbOccluded[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  228 |     bool [01;35m[KbOccluded[m[K;     // marker was not visible (occluded) in this frame
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:229:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbPCSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  229 |     bool [01;35m[KbPCSolved[m[K;     // reported position provided by point cloud solve
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:230:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbModelSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  230 |     bool [01;35m[KbModelSolved[m[K;  // reported position provided by model solve
+      |          [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCapNatNetClient.cpp:231:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbHasModel[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+  231 |     bool [01;35m[KbHasModel[m[K;     // marker has an associated asset in the data stream
+      |          [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:[m[K In member function ‘[01m[Kvoid MoCap::sendRigidBodyMessage(std::vector<int>&, std::vector<bool>&, std::vector<float>&, std::vector<float>&, std::vector<float>&, std::vector<float>&, std::vector<float>&, std::vector<float>&, std::vector<float>&, std::vector<float>&)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:18:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 2 has type ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   18 |   printf("Sending message containing [01;35m[K%d[m[K Rigid Bodies.", [32m[KID.size()[m[K);
+      |                                      [01;35m[K~^[m[K                 [32m[K~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K                        [32m[K|[m[K
+      |                                       [01;35m[Kint[m[K                      [32m[Kstd::vector<int>::size_type {aka long unsigned int}[m[K
+      |                                      [32m[K%ld[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KbTrackingValid[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | d MoCap::sendRigidBodyMessage(vector<int> &ID, [01;35m[Kvector<bool> &bTrackingValid[m[K, vector<float> &meanError, vector<float> &x, vector<float> &y, vector<float> &z, vector<float> &qx, vector<float> &qy, vector<float> &qz, vector<float> &qw)
+      |                                                [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:96:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KmeanError[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | ector<int> &ID, vector<bool> &bTrackingValid, [01;35m[Kvector<float> &meanError[m[K, vector<float> &x, vector<float> &y, vector<float> &z, vector<float> &qx, vector<float> &qy, vector<float> &qz, vector<float> &qw)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:122:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | l> &bTrackingValid, vector<float> &meanError, [01;35m[Kvector<float> &x[m[K, vector<float> &y, vector<float> &z, vector<float> &qx, vector<float> &qy, vector<float> &qz, vector<float> &qw)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:140:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | , vector<float> &meanError, vector<float> &x, [01;35m[Kvector<float> &y[m[K, vector<float> &z, vector<float> &qx, vector<float> &qy, vector<float> &qz, vector<float> &qw)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:158:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kz[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | eanError, vector<float> &x, vector<float> &y, [01;35m[Kvector<float> &z[m[K, vector<float> &qx, vector<float> &qy, vector<float> &qz, vector<float> &qw)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:176:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | loat> &x, vector<float> &y, vector<float> &z, [01;35m[Kvector<float> &qx[m[K, vector<float> &qy, vector<float> &qz, vector<float> &qw)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:195:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqy[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | oat> &y, vector<float> &z, vector<float> &qx, [01;35m[Kvector<float> &qy[m[K, vector<float> &qz, vector<float> &qw)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:214:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqz[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | at> &z, vector<float> &qx, vector<float> &qy, [01;35m[Kvector<float> &qz[m[K, vector<float> &qw)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^~[m[K
+
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:16:233:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kqw[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   16 | t> &qx, vector<float> &qy, vector<float> &qz, [01;35m[Kvector<float> &qw[m[K)
+      |                                               [01;35m[K~~~~~~~~~~~~~~~^~[m[K
+
+[100%] [32m[1mLinking CXX executable mocap[0m
+/usr/bin/ld: CMakeFiles/mocap.dir/src/MoCap.cpp.o: in function `main':
+MoCap.cpp:(.text+0x7d): undefined reference to `MoCap::MoCap()'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/mocap.dir/build.make:99: mocap] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

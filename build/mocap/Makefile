@@ -206,33 +206,6 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-src/MessageParser.o: src/MessageParser.cpp.o
-
-.PHONY : src/MessageParser.o
-
-# target to build an object file
-src/MessageParser.cpp.o:
-	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MessageParser.cpp.o
-.PHONY : src/MessageParser.cpp.o
-
-src/MessageParser.i: src/MessageParser.cpp.i
-
-.PHONY : src/MessageParser.i
-
-# target to preprocess a source file
-src/MessageParser.cpp.i:
-	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MessageParser.cpp.i
-.PHONY : src/MessageParser.cpp.i
-
-src/MessageParser.s: src/MessageParser.cpp.s
-
-.PHONY : src/MessageParser.s
-
-# target to generate assembly for a file
-src/MessageParser.cpp.s:
-	$(MAKE) -f CMakeFiles/mocap.dir/build.make CMakeFiles/mocap.dir/src/MessageParser.cpp.s
-.PHONY : src/MessageParser.cpp.s
-
 src/MoCap.o: src/MoCap.cpp.o
 
 .PHONY : src/MoCap.o
@@ -303,9 +276,6 @@ help:
 	@echo "... mocap"
 	@echo "... mocap_uninstall"
 	@echo "... uninstall"
-	@echo "... src/MessageParser.o"
-	@echo "... src/MessageParser.i"
-	@echo "... src/MessageParser.s"
 	@echo "... src/MoCap.o"
 	@echo "... src/MoCap.i"
 	@echo "... src/MoCap.s"

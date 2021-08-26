@@ -1,7 +1,7 @@
 // This class implements a NatNet client
 #include <cstdio>
 #include "MoCapNatNetClient.h"
-#include "MessageParser.h"
+#include <vector>
 
 
 // Include the configuration file to read all the information
@@ -11,7 +11,7 @@ using namespace std;
  
 
 // MoCapNatNetClient constructor
-MoCapNatNetClient::MoCapNatNetClient()
+MoCapNatNetClient::MoCapNatNetClient(MoCap* moCapPublisher)
 {
     // Create the connection parameters
     if (SERVER_CONNECTION_TYPE == 0) g_connectParams.connectionType = ConnectionType_Multicast;
@@ -21,17 +21,26 @@ MoCapNatNetClient::MoCapNatNetClient()
     g_connectParams.serverDataPort = SERVER_DATA_PORT;
     g_connectParams.serverCommandPort = SERVER_COMMAND_PORT;
     
+    // Struct where the data description will be saved
+    pDataDefs = NULL;
+
     // Set the callback for the frames received by the server
     this->SetFrameReceivedCallback( dataFrameHandler, this );
 
-    // Create the message parser
-    parser = new MessageParser();
+    // Save the ROS2 publisher to send messages to this
+    this->MoCapPublisher = moCapPublisher;
 }
 
 // Distructor
 MoCapNatNetClient::~MoCapNatNetClient()
 {
-    delete parser;
+    if ( this->pDataDefs )
+    {
+        NatNet_FreeDescriptions( this->pDataDefs );
+        this->pDataDefs = NULL; 
+    }
+
+    this->MoCapPublisher = NULL;//this is deleted outside
 }
 
 // Method that starts the connection with the server
@@ -95,7 +104,9 @@ int MoCapNatNetClient::connect()
         else
             printf("Error getting Analog frame rate.\n");
     
-    //getDataDescription();
+    // Get all the objects from the server
+    getDataDescription();
+    
     // Return the code
     return retCode;
 }
@@ -127,7 +138,6 @@ double MoCapNatNetClient::SecondsSinceHostTimestamp( uint64_t hostTimestamp )
 // Callback for the data frames streamed by the server
 void NATNET_CALLCONV dataFrameHandler(sFrameOfMocapData* data, void* pUserData)
 {
-    printf("Ricevuto frame....");
     MoCapNatNetClient* pClient = (MoCapNatNetClient*) pUserData;
 
     int g_analogSamplesPerMocapFrame = pClient->getAnalogSamplesPerMocapFrame();
@@ -200,24 +210,7 @@ void NATNET_CALLCONV dataFrameHandler(sFrameOfMocapData* data, void* pUserData)
 	printf("Timecode : %s\n", szTimecode);
 
 	// Rigid Bodies
-	printf("Rigid Bodies [Count=%d]\n", data->nRigidBodies);
-	for(i=0; i < data->nRigidBodies; i++)
-	{
-        // params
-        // 0x01 : bool, rigid body was successfully tracked in this frame
-        bool bTrackingValid = data->RigidBodies[i].params & 0x01;
-
-		printf("Rigid Body [ID=%d  Error=%3.2f  Valid=%d]\n", data->RigidBodies[i].ID, data->RigidBodies[i].MeanError, bTrackingValid);
-		printf("\tx\ty\tz\tqx\tqy\tqz\tqw\n");
-		printf("\t%3.2f\t%3.2f\t%3.2f\t%3.2f\t%3.2f\t%3.2f\t%3.2f\n",
-			data->RigidBodies[i].x,
-			data->RigidBodies[i].y,
-			data->RigidBodies[i].z,
-			data->RigidBodies[i].qx,
-			data->RigidBodies[i].qy,
-			data->RigidBodies[i].qz,
-			data->RigidBodies[i].qw);
-	}
+    pClient->sendRigidBodyMessage(data->RigidBodies, data->nRigidBodies);
 
 	// Skeletons
 	printf("Skeletons [Count=%d]\n", data->nSkeletons);
@@ -322,131 +315,157 @@ void NATNET_CALLCONV dataFrameHandler(sFrameOfMocapData* data, void* pUserData)
     }
 }
 
+// Method responsible of forwarding messages of rigid body data to the ROS2 publisher
+void MoCapNatNetClient::sendRigidBodyMessage(sRigidBodyData* bodies, int nRigidBodies)
+{
+    this->MoCapPublisher->sendRigidBodyMessage(bodies, nRigidBodies);
+}
+
 /*Method that gets the data description from the server*/
 void MoCapNatNetClient::getDataDescription()
 {
-    void* response;
-	int retCode;
-    int nBytes = 0;
-    ErrorCode ret = ErrorCode_OK;
+    // TODO : throw an execption if it was not possible to read the data
     int iResult;
 
-    printf("Sending test request...\n\n");
-
-    ret = this->SendMessageAndWait("TestRequest", &response, &nBytes);
-	if (ret == ErrorCode_OK)
-	{
-		printf("[SampleClient] Received: %s\n", (char*)response);
-	}
-
+    // Request the data description
     printf("\n\n[SampleClient] Requesting Data Descriptions...\n");
-	sDataDescriptions* pDataDefs = NULL;
-	iResult = this->GetDataDescriptionList(&pDataDefs);
-	if (iResult != ErrorCode_OK || pDataDefs == NULL)
+	iResult = this->GetDataDescriptionList(&this->pDataDefs);
+	if (iResult != ErrorCode_OK || this->pDataDefs == NULL)
 	{
 		printf("[SampleClient] Unable to retrieve Data Descriptions.\n");
 	}
 	else
 	{
-        // Process the data description
-        printf("[SampleClient] Received %d Data Descriptions:\n", pDataDefs->nDataDescriptions );
-        for(int i=0; i < pDataDefs->nDataDescriptions; i++)
+        // Print the data description
+        processDataDescription(this->pDataDefs);
+    }
+}
+
+// Method that process the data description received from the server
+void MoCapNatNetClient::processDataDescription(sDataDescriptions* pDataDefs)
+{
+    // Process the data description
+    printf("[SampleClient] Received %d Data Descriptions:\n", pDataDefs->nDataDescriptions );
+    for(int i=0; i < pDataDefs->nDataDescriptions; i++)
+    {
+        printf("Data Description # %d (type=%d)\n", i, pDataDefs->arrDataDescriptions[i].type);
+        switch (pDataDefs->arrDataDescriptions[i].type)
         {
-            printf("Data Description # %d (type=%d)\n", i, pDataDefs->arrDataDescriptions[i].type);
-            if(pDataDefs->arrDataDescriptions[i].type == Descriptor_MarkerSet)
-            {
-                // MarkerSet
-                sMarkerSetDescription* pMS = pDataDefs->arrDataDescriptions[i].Data.MarkerSetDescription;
-                printf("MarkerSet Name : %s\n", pMS->szName);
-                for(int i=0; i < pMS->nMarkers; i++)
-                    printf("%s\n", pMS->szMarkerNames[i]);
+        case Descriptor_MarkerSet:
+            // MarkerSet
+            processMarkerSet(pDataDefs->arrDataDescriptions[i].Data.MarkerSetDescription);
+            break;
+        case Descriptor_RigidBody:
+            // Rigid body
+            processRigidBody(pDataDefs->arrDataDescriptions[i].Data.RigidBodyDescription);
+            break;
+        case Descriptor_Skeleton:
+            // Skeleton
+            processSkeleton(pDataDefs->arrDataDescriptions[i].Data.SkeletonDescription);
+            break;
+        case Descriptor_ForcePlate:
+            // Force Plate
+            processForcePlate(pDataDefs->arrDataDescriptions[i].Data.ForcePlateDescription);
+            break;
+        case Descriptor_Device:
+            // Peripheral Device
+            processPeripheralDevice(pDataDefs->arrDataDescriptions[i].Data.DeviceDescription);
+            break;
+        case Descriptor_Camera:
+            // Camera
+            processCamera(pDataDefs->arrDataDescriptions[i].Data.CameraDescription);
+            break;
+        default:
+            // Unkown data type
+            printf("Unknown data type.\n");
+            break;
+        }
+    }
+}
 
-            }
-            else if(pDataDefs->arrDataDescriptions[i].type == Descriptor_RigidBody)
-            {
-                // RigidBodyFi
-                sRigidBodyDescription* pRB = pDataDefs->arrDataDescriptions[i].Data.RigidBodyDescription;
-                printf("RigidBody Name : %s\n", pRB->szName);
-                printf("RigidBody ID : %d\n", pRB->ID);
-                printf("RigidBody Parent ID : %d\n", pRB->parentID);
-                printf("Parent Offset : %3.2f,%3.2f,%3.2f\n", pRB->offsetx, pRB->offsety, pRB->offsetz);
+// Method that processes a MarkerSet descriptor
+void MoCapNatNetClient::processMarkerSet(sMarkerSetDescription* pMS)
+{
+    printf("MarkerSet Name : %s\n", pMS->szName);
+    for(int i=0; i < pMS->nMarkers; i++)
+        printf("%s\n", pMS->szMarkerNames[i]);
+}
 
-                if ( pRB->MarkerPositions != NULL && pRB->MarkerRequiredLabels != NULL )
-                {
-                    for ( int markerIdx = 0; markerIdx < pRB->nMarkers; ++markerIdx )
-                    {
-                        const MarkerData& markerPosition = pRB->MarkerPositions[markerIdx];
-                        const int markerRequiredLabel = pRB->MarkerRequiredLabels[markerIdx];
+// Method that processes a RigidBody descriptor
+void MoCapNatNetClient::processRigidBody(sRigidBodyDescription* pRB)
+{
+    printf("RigidBody Name : %s\n", pRB->szName);
+    printf("RigidBody ID : %d\n", pRB->ID);
+    printf("RigidBody Parent ID : %d\n", pRB->parentID);
+    printf("Parent Offset : %3.2f,%3.2f,%3.2f\n", pRB->offsetx, pRB->offsety, pRB->offsetz);
 
-                        printf( "\tMarker #%d:\n", markerIdx );
-                        printf( "\t\tPosition: %.2f, %.2f, %.2f\n", markerPosition[0], markerPosition[1], markerPosition[2] );
+    if ( pRB->MarkerPositions != NULL && pRB->MarkerRequiredLabels != NULL )
+    {
+        for ( int markerIdx = 0; markerIdx < pRB->nMarkers; ++markerIdx )
+        {
+            const MarkerData& markerPosition = pRB->MarkerPositions[markerIdx];
+            const int markerRequiredLabel = pRB->MarkerRequiredLabels[markerIdx];
 
-                        if ( markerRequiredLabel != 0 )
-                        {
-                            printf( "\t\tRequired active label: %d\n", markerRequiredLabel );
-                        }
-                    }
-                }
-            }
-            else if(pDataDefs->arrDataDescriptions[i].type == Descriptor_Skeleton)
+            printf( "\tMarker #%d:\n", markerIdx );
+            printf( "\t\tPosition: %.2f, %.2f, %.2f\n", markerPosition[0], markerPosition[1], markerPosition[2] );
+
+            if ( markerRequiredLabel != 0 )
             {
-                // Skeleton
-                sSkeletonDescription* pSK = pDataDefs->arrDataDescriptions[i].Data.SkeletonDescription;
-                printf("Skeleton Name : %s\n", pSK->szName);
-                printf("Skeleton ID : %d\n", pSK->skeletonID);
-                printf("RigidBody (Bone) Count : %d\n", pSK->nRigidBodies);
-                for(int j=0; j < pSK->nRigidBodies; j++)
-                {
-                    sRigidBodyDescription* pRB = &pSK->RigidBodies[j];
-                    printf("  RigidBody Name : %s\n", pRB->szName);
-                    printf("  RigidBody ID : %d\n", pRB->ID);
-                    printf("  RigidBody Parent ID : %d\n", pRB->parentID);
-                    printf("  Parent Offset : %3.2f,%3.2f,%3.2f\n", pRB->offsetx, pRB->offsety, pRB->offsetz);
-                }
-            }
-            else if(pDataDefs->arrDataDescriptions[i].type == Descriptor_ForcePlate)
-            {
-                // Force Plate
-                sForcePlateDescription* pFP = pDataDefs->arrDataDescriptions[i].Data.ForcePlateDescription;
-                printf("Force Plate ID : %d\n", pFP->ID);
-                printf("Force Plate Serial : %s\n", pFP->strSerialNo);
-                printf("Force Plate Width : %3.2f\n", pFP->fWidth);
-                printf("Force Plate Length : %3.2f\n", pFP->fLength);
-                printf("Force Plate Electrical Center Offset (%3.3f, %3.3f, %3.3f)\n", pFP->fOriginX,pFP->fOriginY, pFP->fOriginZ);
-                for(int iCorner=0; iCorner<4; iCorner++)
-                    printf("Force Plate Corner %d : (%3.4f, %3.4f, %3.4f)\n", iCorner, pFP->fCorners[iCorner][0],pFP->fCorners[iCorner][1],pFP->fCorners[iCorner][2]);
-                printf("Force Plate Type : %d\n", pFP->iPlateType);
-                printf("Force Plate Data Type : %d\n", pFP->iChannelDataType);
-                printf("Force Plate Channel Count : %d\n", pFP->nChannels);
-                for(int iChannel=0; iChannel<pFP->nChannels; iChannel++)
-                    printf("\tChannel %d : %s\n", iChannel, pFP->szChannelNames[iChannel]);
-            }
-            else if (pDataDefs->arrDataDescriptions[i].type == Descriptor_Device)
-            {
-                // Peripheral Device
-                sDeviceDescription* pDevice = pDataDefs->arrDataDescriptions[i].Data.DeviceDescription;
-                printf("Device Name : %s\n", pDevice->strName);
-                printf("Device Serial : %s\n", pDevice->strSerialNo);
-                printf("Device ID : %d\n", pDevice->ID);
-                printf("Device Channel Count : %d\n", pDevice->nChannels);
-                for (int iChannel = 0; iChannel < pDevice->nChannels; iChannel++)
-                    printf("\tChannel %d : %s\n", iChannel, pDevice->szChannelNames[iChannel]);
-            }
-            else if (pDataDefs->arrDataDescriptions[i].type == Descriptor_Camera)
-            {
-                // Camera
-                sCameraDescription* pCamera = pDataDefs->arrDataDescriptions[i].Data.CameraDescription;
-                printf("Camera Name : %s\n", pCamera->strName);
-                printf("Camera Position (%3.2f, %3.2f, %3.2f)\n", pCamera->x, pCamera->y, pCamera->z);
-                printf("Camera Orientation (%3.2f, %3.2f, %3.2f, %3.2f)\n", pCamera->qx, pCamera->qy, pCamera->qz, pCamera->qw);
-            }
-            else
-            {
-                printf("Unknown data type.\n");
-                // Unknown
+                printf( "\t\tRequired active label: %d\n", markerRequiredLabel );
             }
         }
     }
 }
 
- 
+// Method that processes a Skeleton descriptor
+void MoCapNatNetClient::processSkeleton(sSkeletonDescription* pSK)
+{
+    // Skeleton
+    printf("Skeleton Name : %s\n", pSK->szName);
+    printf("Skeleton ID : %d\n", pSK->skeletonID);
+    printf("RigidBody (Bone) Count : %d\n", pSK->nRigidBodies);
+    for(int j=0; j < pSK->nRigidBodies; j++)
+    {
+        sRigidBodyDescription* pRB = &pSK->RigidBodies[j];
+        printf("  RigidBody Name : %s\n", pRB->szName);
+        printf("  RigidBody ID : %d\n", pRB->ID);
+        printf("  RigidBody Parent ID : %d\n", pRB->parentID);
+        printf("  Parent Offset : %3.2f,%3.2f,%3.2f\n", pRB->offsetx, pRB->offsety, pRB->offsetz);
+    }
+}
+
+//Method that processes a ForcePlate descriptor
+void MoCapNatNetClient::processForcePlate(sForcePlateDescription* pFP)
+{
+    printf("Force Plate ID : %d\n", pFP->ID);
+    printf("Force Plate Serial : %s\n", pFP->strSerialNo);
+    printf("Force Plate Width : %3.2f\n", pFP->fWidth);
+    printf("Force Plate Length : %3.2f\n", pFP->fLength);
+    printf("Force Plate Electrical Center Offset (%3.3f, %3.3f, %3.3f)\n", pFP->fOriginX,pFP->fOriginY, pFP->fOriginZ);
+    for(int iCorner=0; iCorner<4; iCorner++)
+        printf("Force Plate Corner %d : (%3.4f, %3.4f, %3.4f)\n", iCorner, pFP->fCorners[iCorner][0],pFP->fCorners[iCorner][1],pFP->fCorners[iCorner][2]);
+    printf("Force Plate Type : %d\n", pFP->iPlateType);
+    printf("Force Plate Data Type : %d\n", pFP->iChannelDataType);
+    printf("Force Plate Channel Count : %d\n", pFP->nChannels);
+    for(int iChannel=0; iChannel<pFP->nChannels; iChannel++)
+        printf("\tChannel %d : %s\n", iChannel, pFP->szChannelNames[iChannel]);
+}
+
+//Method that processes a Peripheral device descriptor
+void MoCapNatNetClient::processPeripheralDevice(sDeviceDescription* pDevice)
+{
+    printf("Device Name : %s\n", pDevice->strName);
+    printf("Device Serial : %s\n", pDevice->strSerialNo);
+    printf("Device ID : %d\n", pDevice->ID);
+    printf("Device Channel Count : %d\n", pDevice->nChannels);
+    for (int iChannel = 0; iChannel < pDevice->nChannels; iChannel++)
+        printf("\tChannel %d : %s\n", iChannel, pDevice->szChannelNames[iChannel]);
+}
+
+//Method that processes a Camera device descriptor
+void MoCapNatNetClient::processCamera(sCameraDescription* pCamera)
+{
+    printf("Camera Name : %s\n", pCamera->strName);
+    printf("Camera Position (%3.2f, %3.2f, %3.2f)\n", pCamera->x, pCamera->y, pCamera->z);
+    printf("Camera Orientation (%3.2f, %3.2f, %3.2f, %3.2f)\n", pCamera->qx, pCamera->qy, pCamera->qz, pCamera->qw);
+}
