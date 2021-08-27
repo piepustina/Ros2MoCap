@@ -1,0 +1,7 @@
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_pub/src/MoCapPublisher.cpp:[m[K In member function ‘[01m[Kvoid MoCapPublisher::sendRigidBodyMessage(sRigidBodyData*, int)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_pub/src/MoCapPublisher.cpp:54:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing RigidBodyArray = struct mocap_interfaces::msg::RigidBodyArray_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct mocap_interfaces::msg::RigidBodyArray_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpush_back[m[K’
+   54 |   msg.[01;31m[Kpush_back[m[K(rb);
+      |       [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/mocap_pub.dir/build.make:63: CMakeFiles/mocap_pub.dir/src/MoCapPublisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap_pub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

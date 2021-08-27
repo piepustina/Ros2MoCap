@@ -1,4 +1,0 @@
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap/src/MoCap.cpp:21:22:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kc[m[K’ [[01;35m[K-Wunused-variable[m[K]
-   21 |   MoCapNatNetClient* [01;35m[Kc[m[K = new MoCapNatNetClient(1, 100, 1000);
-      |                      [01;35m[K^[m[K

@@ -1,8 +1,0 @@
-[0.014s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
-[0.057s] [ 25%] [32m[1mLinking CXX executable mocap[0m
-[0.082s] /usr/bin/ld: cannot find -l++
-[0.083s] collect2: error: ld returned 1 exit status
-[0.084s] make[2]: *** [CMakeFiles/mocap.dir/build.make:114: mocap] Error 1
-[0.084s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
-[0.084s] make: *** [Makefile:141: all] Error 2
-[0.086s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

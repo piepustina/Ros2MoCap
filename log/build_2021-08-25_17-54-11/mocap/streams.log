@@ -1,8 +1,0 @@
-[0.014s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8
-[0.054s] [ 25%] [32m[1mLinking CXX executable mocap[0m
-[0.127s] /usr/bin/ld: CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o:(.bss+0x0): multiple definition of `g_analogSamplesPerMocapFrame'; CMakeFiles/mocap.dir/src/MoCap.cpp.o:(.bss+0x0): first defined here
-[0.127s] collect2: error: ld returned 1 exit status
-[0.129s] make[2]: *** [CMakeFiles/mocap.dir/build.make:114: mocap] Error 1
-[0.129s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/mocap.dir/all] Error 2
-[0.129s] make: *** [Makefile:141: all] Error 2
-[0.131s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap -- -j8 -l8

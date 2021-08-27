@@ -1,0 +1,10 @@
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/install/strip.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/install/local.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/install.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/list_install_components.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/rebuild_cache.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/edit_cache.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/test.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/mocap_pub.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/mocap_pub_uninstall.dir
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub/CMakeFiles/uninstall.dir

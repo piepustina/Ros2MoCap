@@ -1,0 +1,26 @@
+[0.014s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub': CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub -- -j8 -l8
+[0.050s] [35m[1mScanning dependencies of target mocap_pub[0m
+[0.080s] [ 33%] [32mBuilding CXX object CMakeFiles/mocap_pub.dir/src/MoCapPublisher.cpp.o[0m
+[2.178s] [ 66%] [32m[1mLinking CXX executable mocap_pub[0m
+[2.314s] [100%] Built target mocap_pub
+[2.323s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub' returned '0': CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub:/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub -- -j8 -l8
+[2.356s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub': CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub:/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub
+[2.364s] -- Install configuration: ""
+[2.364s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/lib/mocap_pub/mocap_pub
+[2.365s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/lib/mocap_pub/mocap_pub" to ""
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/package_run_dependencies/mocap_pub
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/parent_prefix_path/mocap_pub
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/ament_prefix_path.sh
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/ament_prefix_path.dsv
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/path.sh
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/path.dsv
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.bash
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.sh
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.zsh
+[2.366s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.dsv
+[2.367s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/package.dsv
+[2.367s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/packages/mocap_pub
+[2.367s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/cmake/mocap_pubConfig.cmake
+[2.367s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/cmake/mocap_pubConfig-version.cmake
+[2.367s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/package.xml
+[2.369s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub' returned '0': CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub:/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub

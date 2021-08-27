@@ -1,4 +1,0 @@
-[35m[1mScanning dependencies of target mocap[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCap.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/mocap.dir/src/MoCapNatNetClient.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable mocap[0m
