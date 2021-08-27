@@ -1,0 +1,17 @@
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:7:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    7 | int main([01;35m[Kint argc[m[K, char ** argv)
+      |          [01;35m[K~~~~^~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:7:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+    7 | int main(int argc, [01;35m[Kchar ** argv[m[K)
+      |                    [01;35m[K~~~~~~~~^~~~[m[K
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:4:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass MoCapSubscriber[m[K’
+    4 | class [01;31m[KMoCapSubscriber[m[K
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:1[m[K:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include/MoCapSubscriber/MoCapSubscriber.h:11:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass MoCapSubscriber[m[K’
+   11 | class [01;36m[KMoCapSubscriber[m[K: public rclcpp::Node
+      |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/world_to_base.dir/build.make:76: CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

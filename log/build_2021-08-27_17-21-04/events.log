@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000590] (-) JobUnselected: {'identifier': 'mocap_interfaces'}
+[0.000763] (-) JobUnselected: {'identifier': 'mocap_pub'}
+[0.001017] (world_to_base) JobQueued: {'identifier': 'world_to_base', 'dependencies': OrderedDict([('mocap_interfaces', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces')])}
+[0.001091] (world_to_base) JobStarted: {'identifier': 'world_to_base'}
+[0.012374] (world_to_base) JobProgress: {'identifier': 'world_to_base', 'progress': 'cmake'}
+[0.013032] (world_to_base) JobProgress: {'identifier': 'world_to_base', 'progress': 'build'}
+[0.013808] (world_to_base) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base', '--', '-j8', '-l8'], 'cwd': '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'pietro'), ('SSH_AGENT_PID', '1821'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/pietro'), ('OLDPWD', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1603'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=db907c55eeeb20057e78ecb561289767'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/home/pietro/ros2_install'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'pietro'), ('_', '/usr/bin/colcon'), ('JOURNAL_STREAM', '8:45535'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'pietro'), ('TERM', 'xterm-256color'), ('LIBGL_ALWAYS_INDIRECT', '1'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/pietro-HP-Pavilion-Laptop-15-cs3xxx:@/tmp/.ICE-unix/1864,unix/pietro-HP-Pavilion-Laptop-15-cs3xxx:/tmp/.ICE-unix/1864'), ('INVOCATION_ID', 'b8b9f815d6644e10843033f086dfd6f9'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c8e15c79_266e_4007_8a17_17875520eaab'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.178'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '25'), ('AMENT_PREFIX_PATH', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=db907c55eeeb20057e78ecb561289767'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy')]), 'shell': False}
+[0.038931] (world_to_base) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.059046] (world_to_base) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099891] (-) TimerEvent: {}
+[0.200265] (-) TimerEvent: {}
+[0.202899] (world_to_base) StdoutLine: {'line': b'-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.234424] (world_to_base) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.239326] (world_to_base) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.299352] (world_to_base) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.300326] (-) TimerEvent: {}
+[0.321101] (world_to_base) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[0.377215] (world_to_base) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.400409] (-) TimerEvent: {}
+[0.416817] (world_to_base) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.418081] (world_to_base) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.418839] (world_to_base) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.474535] (world_to_base) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.474795] (world_to_base) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.500612] (-) TimerEvent: {}
+[0.540871] (world_to_base) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[0.541132] (world_to_base) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[0.592290] (world_to_base) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[0.592630] (world_to_base) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[0.600757] (-) TimerEvent: {}
+[0.654813] (world_to_base) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[0.656214] (world_to_base) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.700972] (-) TimerEvent: {}
+[0.780340] (world_to_base) StdoutLine: {'line': b'-- Found mocap_interfaces: 0.0.0 (/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake)\n'}
+[0.801173] (-) TimerEvent: {}
+[0.833865] (world_to_base) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.840390] (world_to_base) StdoutLine: {'line': b'-- Generating done\n'}
+[0.842515] (world_to_base) StdoutLine: {'line': b'-- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base\n'}
+[0.862689] (world_to_base) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target world_to_base\x1b[0m\n'}
+[0.894875] (world_to_base) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o\x1b[0m\n'}
+[0.897783] (world_to_base) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o\x1b[0m\n'}
+[0.901306] (-) TimerEvent: {}
+[0.906044] (world_to_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[0.906256] (world_to_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:7:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[0.906344] (world_to_base) StderrLine: {'line': b'    7 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char ** argv)\n'}
+[0.906417] (world_to_base) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[0.906491] (world_to_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:7:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[0.906566] (world_to_base) StderrLine: {'line': b'    7 | int main(int argc, \x1b[01;35m\x1b[Kchar ** argv\x1b[m\x1b[K)\n'}
+[0.906642] (world_to_base) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[1.001453] (-) TimerEvent: {}
+[1.101856] (-) TimerEvent: {}
+[1.202334] (-) TimerEvent: {}
+[1.302705] (-) TimerEvent: {}
+[1.403192] (-) TimerEvent: {}
+[1.503684] (-) TimerEvent: {}
+[1.604180] (-) TimerEvent: {}
+[1.704671] (-) TimerEvent: {}
+[1.805155] (-) TimerEvent: {}
+[1.850555] (world_to_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:4:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredefinition of \xe2\x80\x98\x1b[01m\x1b[Kclass MoCapSubscriber\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.850781] (world_to_base) StderrLine: {'line': b'    4 | class \x1b[01;31m\x1b[KMoCapSubscriber\x1b[m\x1b[K\n'}
+[1.850895] (world_to_base) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.851000] (world_to_base) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:1\x1b[m\x1b[K:\n'}
+[1.851102] (world_to_base) StderrLine: {'line': b'\x1b[01m\x1b[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include/MoCapSubscriber/MoCapSubscriber.h:11:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious definition of \xe2\x80\x98\x1b[01m\x1b[Kclass MoCapSubscriber\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.851200] (world_to_base) StderrLine: {'line': b'   11 | class \x1b[01;36m\x1b[KMoCapSubscriber\x1b[m\x1b[K: public rclcpp::Node\n'}
+[1.851309] (world_to_base) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.905286] (-) TimerEvent: {}
+[2.005715] (-) TimerEvent: {}
+[2.106182] (-) TimerEvent: {}
+[2.158405] (world_to_base) StderrLine: {'line': b'make[2]: *** [CMakeFiles/world_to_base.dir/build.make:76: CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o] Error 1\n'}
+[2.158727] (world_to_base) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2\n'}
+[2.158962] (world_to_base) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.161065] (world_to_base) CommandEnded: {'returncode': 2}
+[2.201035] (world_to_base) JobEnded: {'identifier': 'world_to_base', 'rc': 2}
+[2.206267] (-) TimerEvent: {}
+[2.211560] (-) EventReactorShutdown: {}

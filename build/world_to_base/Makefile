@@ -168,6 +168,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named world_to_base
+
+# Build rule for target.
+world_to_base: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 world_to_base
+.PHONY : world_to_base
+
+# fast build rule for target.
+world_to_base/fast:
+	$(MAKE) -f CMakeFiles/world_to_base.dir/build.make CMakeFiles/world_to_base.dir/build
+.PHONY : world_to_base/fast
+
+#=============================================================================
 # Target rules for targets named world_to_base_uninstall
 
 # Build rule for target.
@@ -193,6 +206,33 @@ uninstall/fast:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
+src/WorldToBase.o: src/WorldToBase.cpp.o
+
+.PHONY : src/WorldToBase.o
+
+# target to build an object file
+src/WorldToBase.cpp.o:
+	$(MAKE) -f CMakeFiles/world_to_base.dir/build.make CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o
+.PHONY : src/WorldToBase.cpp.o
+
+src/WorldToBase.i: src/WorldToBase.cpp.i
+
+.PHONY : src/WorldToBase.i
+
+# target to preprocess a source file
+src/WorldToBase.cpp.i:
+	$(MAKE) -f CMakeFiles/world_to_base.dir/build.make CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.i
+.PHONY : src/WorldToBase.cpp.i
+
+src/WorldToBase.s: src/WorldToBase.cpp.s
+
+.PHONY : src/WorldToBase.s
+
+# target to generate assembly for a file
+src/WorldToBase.cpp.s:
+	$(MAKE) -f CMakeFiles/world_to_base.dir/build.make CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.s
+.PHONY : src/WorldToBase.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -203,11 +243,15 @@ help:
 	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... world_to_base"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... world_to_base_uninstall"
 	@echo "... uninstall"
+	@echo "... src/WorldToBase.o"
+	@echo "... src/WorldToBase.i"
+	@echo "... src/WorldToBase.s"
 .PHONY : help
 
 

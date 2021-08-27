@@ -1,0 +1,18 @@
+[0.016s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base -- -j8 -l8
+[0.052s] [35m[1mScanning dependencies of target world_to_base[0m
+[0.062s] [ 66%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o[0m
+[0.062s] [ 66%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o[0m
+[0.068s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KMoCapSubscriber.h: No such file or directory
+[0.068s]     1 | #include [01;31m[K<MoCapSubscriber.h>[m[K
+[0.068s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.068s] compilation terminated.
+[0.069s] make[2]: *** [CMakeFiles/world_to_base.dir/build.make:76: CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o] Error 1
+[0.069s] make[2]: *** Waiting for unfinished jobs....
+[0.070s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kmo_cap_subscriber.cpp: No such file or directory
+[0.070s]     3 | #include [01;31m[K"mo_cap_subscriber.cpp"[m[K
+[0.070s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.070s] compilation terminated.
+[0.071s] make[2]: *** [CMakeFiles/world_to_base.dir/build.make:63: CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o] Error 1
+[0.071s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2
+[0.071s] make: *** [Makefile:141: all] Error 2
+[0.073s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base' returned '2': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base -- -j8 -l8

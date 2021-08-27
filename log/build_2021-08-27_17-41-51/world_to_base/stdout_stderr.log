@@ -1,0 +1,15 @@
+[35m[1mScanning dependencies of target world_to_base[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o[0m
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:3:10:[m[K [01;31m[Kfatal error: [m[KMoCapSubscriber.cpp.o: No such file or directory
+    3 | #include [01;31m[K<MoCapSubscriber.cpp.o>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/world_to_base.dir/build.make:63: CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:[m[K In member function ‘[01m[Kvoid MoCapSubscriber::rigid_body_topic_callback(mocap_interfaces::msg::RigidBodyArray_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:17:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   17 |     void rigid_body_topic_callback([01;35m[Kconst mocap_interfaces::msg::RigidBodyArray::SharedPtr msg[m[K) const
+      |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

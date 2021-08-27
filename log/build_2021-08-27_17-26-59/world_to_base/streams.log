@@ -1,0 +1,27 @@
+[0.015s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base -- -j8 -l8
+[0.056s] [35m[1mScanning dependencies of target world_to_base[0m
+[0.089s] [ 33%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o[0m
+[1.064s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:[m[K In constructor ‘[01m[KMoCapSubscriber::MoCapSubscriber()[m[K’:
+[1.064s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:11:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMoCapSubscriber[m[K’ does not have any field named ‘[01m[KNode[m[K’
+[1.064s]    11 |     : [01;31m[KNode[m[K("mocap_subscriber")
+[1.064s]       |       [01;31m[K^~~~[m[K
+[1.064s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:13:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass MoCapSubscriber[m[K’ has no member named ‘[01m[Kcreate_subscription[m[K’
+[1.064s]    13 |       subscription_ = this->[01;31m[Kcreate_subscription[m[K<mocap_interfaces::msg::RigidBodyArray>(
+[1.065s]       |                             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.065s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:13:86:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[1.065s]    13 |       subscription_ = this->create_subscription<mocap_interfaces::msg::RigidBodyArray[01;31m[K>[m[K(
+[1.065s]       |                                                                                      [01;31m[K^[m[K
+[1.065s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:14:7:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[1.065s]    14 |       [01;35m[K"rigid_body_topic"[m[K, 10, std::bind(&MinimalSubscriber::rigid_body_topic_callback, this, _1));
+[1.065s]       |       [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[1.065s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:14:42:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalSubscriber[m[K’ has not been declared
+[1.065s]    14 |       "rigid_body_topic", 10, std::bind(&[01;31m[KMinimalSubscriber[m[K::rigid_body_topic_callback, this, _1));
+[1.065s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.065s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:[m[K In member function ‘[01m[Kvoid MoCapSubscriber::rigid_body_topic_callback(mocap_interfaces::msg::RigidBodyArray) const[m[K’:
+[1.065s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:18:80:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[1.065s]    18 |     void rigid_body_topic_callback([01;35m[Kconst mocap_interfaces::msg::RigidBodyArray msg[m[K) const
+[1.065s]       |                                    [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.335s] make[2]: *** [CMakeFiles/world_to_base.dir/build.make:76: CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o] Error 1
+[1.336s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2
+[1.336s] make: *** [Makefile:141: all] Error 2
+[1.337s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base' returned '2': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base -- -j8 -l8

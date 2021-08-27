@@ -1,0 +1,16 @@
+[35m[1mScanning dependencies of target world_to_base[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o[0m
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:1:10:[m[K [01;31m[Kfatal error: [m[KMoCapSubscriber.h: No such file or directory
+    1 | #include [01;31m[K<MoCapSubscriber.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/world_to_base.dir/build.make:76: CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kmo_cap_subscriber.cpp: No such file or directory
+    3 | #include [01;31m[K"mo_cap_subscriber.cpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/world_to_base.dir/build.make:63: CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

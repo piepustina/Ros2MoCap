@@ -1,0 +1,45 @@
+[0.016s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base -- -j8 -l8
+[0.038s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.058s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.202s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.233s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.238s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.298s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.320s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.376s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.416s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.417s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.418s] -- Looking for pthread.h
+[0.474s] -- Looking for pthread.h - found
+[0.474s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.540s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.540s] -- Looking for pthread_create in pthreads
+[0.591s] -- Looking for pthread_create in pthreads - not found
+[0.592s] -- Looking for pthread_create in pthread
+[0.654s] -- Looking for pthread_create in pthread - found
+[0.655s] -- Found Threads: TRUE  
+[0.779s] -- Found mocap_interfaces: 0.0.0 (/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake)
+[0.833s] -- Configuring done
+[0.839s] -- Generating done
+[0.842s] -- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base
+[0.862s] [35m[1mScanning dependencies of target world_to_base[0m
+[0.894s] [ 33%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o[0m
+[0.897s] [ 66%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o[0m
+[0.905s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[0.905s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:7:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.905s]     7 | int main([01;35m[Kint argc[m[K, char ** argv)
+[0.905s]       |          [01;35m[K~~~~^~~~[m[K
+[0.905s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:7:28:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[0.906s]     7 | int main(int argc, [01;35m[Kchar ** argv[m[K)
+[0.906s]       |                    [01;35m[K~~~~~~~~^~~~[m[K
+[1.850s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:4:7:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kclass MoCapSubscriber[m[K’
+[1.850s]     4 | class [01;31m[KMoCapSubscriber[m[K
+[1.850s]       |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.850s] In file included from [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/MoCapSubscriber.cpp:1[m[K:
+[1.850s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include/MoCapSubscriber/MoCapSubscriber.h:11:7:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kclass MoCapSubscriber[m[K’
+[1.850s]    11 | class [01;36m[KMoCapSubscriber[m[K: public rclcpp::Node
+[1.850s]       |       [01;36m[K^~~~~~~~~~~~~~~[m[K
+[2.158s] make[2]: *** [CMakeFiles/world_to_base.dir/build.make:76: CMakeFiles/world_to_base.dir/src/MoCapSubscriber.cpp.o] Error 1
+[2.158s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2
+[2.158s] make: *** [Makefile:141: all] Error 2
+[2.160s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base' returned '2': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/world_to_base -- -j8 -l8

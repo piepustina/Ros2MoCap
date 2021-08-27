@@ -14,7 +14,7 @@ using namespace std;
 
 MoCapPublisher::MoCapPublisher(): Node("mocap_publisher")
 {
-  this->publisher_ = this->create_publisher<mocap_interfaces::msg::RigidBodyArray>("topic", 10);
+  this->publisher_ = this->create_publisher<mocap_interfaces::msg::RigidBodyArray>("rigid_body_topic", 10);
 }
 
 // Method that send over the ROS network the data of a rigid body

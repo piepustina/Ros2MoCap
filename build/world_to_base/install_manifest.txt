@@ -1,3 +1,4 @@
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/lib/world_to_base/world_to_base
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/ament_index/resource_index/package_run_dependencies/world_to_base
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/ament_index/resource_index/parent_prefix_path/world_to_base
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/environment/ament_prefix_path.sh
