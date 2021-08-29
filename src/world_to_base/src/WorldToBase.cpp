@@ -1,5 +1,8 @@
 #include<WorldToBase.h>
 #include <stdio.h>
+#include <Eigen/Dense>
+ 
+using Eigen::MatrixXd;
 
 WorldToBase::WorldToBase(): Node("mo_cap_subscriber")
 {
@@ -7,6 +10,7 @@ WorldToBase::WorldToBase(): Node("mo_cap_subscriber")
     "rigid_body_topic", 10, std::bind(&WorldToBase::rigid_body_topic_callback, this, _1));
 }
 
+//Callback to receive rigid body messages
 void WorldToBase::rigid_body_topic_callback(const mocap_interfaces::msg::RigidBodyArray::SharedPtr msg) const
 {
   //RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());

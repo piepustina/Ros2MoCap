@@ -18,7 +18,7 @@ find_package(rclcpp REQUIRED)
 find_package(mocap_interfaces REQUIRED)
 
 #Include the headers
-include_directories(include)
+include_directories(include include/Eigen)
 
 #Create the executables
 add_executable(world_to_base src/WorldToBase.cpp)

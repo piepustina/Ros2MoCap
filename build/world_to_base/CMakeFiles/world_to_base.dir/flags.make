@@ -6,5 +6,5 @@ CXX_FLAGS =   -Wall -Wextra -Wpedantic -std=gnu++14
 
 CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include -isystem /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include -I/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include/Eigen -isystem /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include -isystem /opt/ros/foxy/include 
 

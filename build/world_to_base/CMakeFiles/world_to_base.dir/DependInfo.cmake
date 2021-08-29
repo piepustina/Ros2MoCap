@@ -18,6 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include"
+  "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/include/Eigen"
   "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include"
   "/opt/ros/foxy/include"
   )
