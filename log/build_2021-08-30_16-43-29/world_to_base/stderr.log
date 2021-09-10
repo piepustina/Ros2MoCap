@@ -1,7 +1,0 @@
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:[m[K In member function ‘[01m[Kvoid WorldToBase::transformPose(mocap_interfaces::msg::RigidBodyArray_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:42:17:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<mocap_interfaces::msg::RigidBody_<std::allocator<void> >, std::allocator<mocap_interfaces::msg::RigidBody_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
-   42 |   for (i = 0; [01;35m[Ki < msg->rigid_bodies.size()[m[K; i++)
-      |               [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:73:17:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<mocap_interfaces::msg::RigidBody_<std::allocator<void> >, std::allocator<mocap_interfaces::msg::RigidBody_<std::allocator<void> > > >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
-   73 |   for (i = 0; [01;35m[Ki < msg->rigid_bodies.size()[m[K; i++)
-      |               [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K

@@ -1,8 +1,0 @@
-msg/Point.idl
-msg/Point.msg
-msg/RigidBody.idl
-msg/RigidBody.msg
-msg/RigidBodyArray.idl
-msg/RigidBodyArray.msg
-msg/UnitQuaternion.idl
-msg/UnitQuaternion.msg

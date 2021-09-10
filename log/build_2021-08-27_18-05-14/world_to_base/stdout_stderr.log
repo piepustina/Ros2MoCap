@@ -1,9 +1,0 @@
-[35m[1mScanning dependencies of target world_to_base[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o[0m
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:[m[K In member function ‘[01m[Kvoid WorldToBase::rigid_body_topic_callback(mocap_interfaces::msg::RigidBodyArray_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:15:40:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kmocap_interfaces::msg::RigidBodyArray_<std::allocator<void> >::_rigid_bodies_type[m[K’ {aka ‘[01m[Kstd::vector<mocap_interfaces::msg::RigidBody_<std::allocator<void> >, std::allocator<mocap_interfaces::msg::RigidBody_<std::allocator<void> > > >[m[K’}
-   15 |   for (int i = 0; i < msg->rigid_bodies[01;31m[K->[m[Ksize(); i++)
-      |                                        [01;31m[K^~[m[K
-make[2]: *** [CMakeFiles/world_to_base.dir/build.make:63: CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o] Error 1
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/world_to_base.dir/all] Error 2
-make: *** [Makefile:141: all] Error 2

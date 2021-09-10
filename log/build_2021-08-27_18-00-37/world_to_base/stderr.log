@@ -1,4 +1,0 @@
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:[m[K In member function ‘[01m[Kvoid WorldToBase::rigid_body_topic_callback(mocap_interfaces::msg::RigidBodyArray_<std::allocator<void> >::SharedPtr) const[m[K’:
-[01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/world_to_base/src/WorldToBase.cpp:11:100:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
-   11 | void WorldToBase::rigid_body_topic_callback([01;35m[Kconst mocap_interfaces::msg::RigidBodyArray::SharedPtr msg[m[K) const
-      |                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

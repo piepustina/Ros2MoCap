@@ -1,6 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000184] (-) JobUnselected: {'identifier': 'mocap_interfaces'}
-[0.000309] (mocap_pub) JobQueued: {'identifier': 'mocap_pub', 'dependencies': OrderedDict([('mocap_interfaces', '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces')])}
-[0.000506] (mocap_pub) JobStarted: {'identifier': 'mocap_pub'}
-[0.011662] (mocap_pub) JobEnded: {'identifier': 'mocap_pub', 'rc': 1}
-[0.022088] (-) EventReactorShutdown: {}

@@ -1,3 +1,0 @@
-[35m[1mScanning dependencies of target mocap_pub[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/mocap_pub.dir/src/MoCapPublisher.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/mocap_pub.dir/src/MoCapNatNetClient.cpp.o[0m
