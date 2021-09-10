@@ -20,15 +20,15 @@ namespace msg
 namespace builder
 {
 
-class Init_RigidBody_qw
+class Init_RigidBody_q
 {
 public:
-  explicit Init_RigidBody_qw(::mocap_interfaces::msg::RigidBody & msg)
+  explicit Init_RigidBody_q(::mocap_interfaces::msg::RigidBody & msg)
   : msg_(msg)
   {}
-  ::mocap_interfaces::msg::RigidBody qw(::mocap_interfaces::msg::RigidBody::_qw_type arg)
+  ::mocap_interfaces::msg::RigidBody q(::mocap_interfaces::msg::RigidBody::_q_type arg)
   {
-    msg_.qw = std::move(arg);
+    msg_.q = std::move(arg);
     return std::move(msg_);
   }
 
@@ -36,96 +36,16 @@ private:
   ::mocap_interfaces::msg::RigidBody msg_;
 };
 
-class Init_RigidBody_qz
+class Init_RigidBody_p
 {
 public:
-  explicit Init_RigidBody_qz(::mocap_interfaces::msg::RigidBody & msg)
+  explicit Init_RigidBody_p(::mocap_interfaces::msg::RigidBody & msg)
   : msg_(msg)
   {}
-  Init_RigidBody_qw qz(::mocap_interfaces::msg::RigidBody::_qz_type arg)
+  Init_RigidBody_q p(::mocap_interfaces::msg::RigidBody::_p_type arg)
   {
-    msg_.qz = std::move(arg);
-    return Init_RigidBody_qw(msg_);
-  }
-
-private:
-  ::mocap_interfaces::msg::RigidBody msg_;
-};
-
-class Init_RigidBody_qy
-{
-public:
-  explicit Init_RigidBody_qy(::mocap_interfaces::msg::RigidBody & msg)
-  : msg_(msg)
-  {}
-  Init_RigidBody_qz qy(::mocap_interfaces::msg::RigidBody::_qy_type arg)
-  {
-    msg_.qy = std::move(arg);
-    return Init_RigidBody_qz(msg_);
-  }
-
-private:
-  ::mocap_interfaces::msg::RigidBody msg_;
-};
-
-class Init_RigidBody_qx
-{
-public:
-  explicit Init_RigidBody_qx(::mocap_interfaces::msg::RigidBody & msg)
-  : msg_(msg)
-  {}
-  Init_RigidBody_qy qx(::mocap_interfaces::msg::RigidBody::_qx_type arg)
-  {
-    msg_.qx = std::move(arg);
-    return Init_RigidBody_qy(msg_);
-  }
-
-private:
-  ::mocap_interfaces::msg::RigidBody msg_;
-};
-
-class Init_RigidBody_z
-{
-public:
-  explicit Init_RigidBody_z(::mocap_interfaces::msg::RigidBody & msg)
-  : msg_(msg)
-  {}
-  Init_RigidBody_qx z(::mocap_interfaces::msg::RigidBody::_z_type arg)
-  {
-    msg_.z = std::move(arg);
-    return Init_RigidBody_qx(msg_);
-  }
-
-private:
-  ::mocap_interfaces::msg::RigidBody msg_;
-};
-
-class Init_RigidBody_y
-{
-public:
-  explicit Init_RigidBody_y(::mocap_interfaces::msg::RigidBody & msg)
-  : msg_(msg)
-  {}
-  Init_RigidBody_z y(::mocap_interfaces::msg::RigidBody::_y_type arg)
-  {
-    msg_.y = std::move(arg);
-    return Init_RigidBody_z(msg_);
-  }
-
-private:
-  ::mocap_interfaces::msg::RigidBody msg_;
-};
-
-class Init_RigidBody_x
-{
-public:
-  explicit Init_RigidBody_x(::mocap_interfaces::msg::RigidBody & msg)
-  : msg_(msg)
-  {}
-  Init_RigidBody_y x(::mocap_interfaces::msg::RigidBody::_x_type arg)
-  {
-    msg_.x = std::move(arg);
-    return Init_RigidBody_y(msg_);
+    msg_.p = std::move(arg);
+    return Init_RigidBody_q(msg_);
   }
 
 private:
@@ -138,10 +58,10 @@ public:
   explicit Init_RigidBody_mean_error(::mocap_interfaces::msg::RigidBody & msg)
   : msg_(msg)
   {}
-  Init_RigidBody_x mean_error(::mocap_interfaces::msg::RigidBody::_mean_error_type arg)
+  Init_RigidBody_p mean_error(::mocap_interfaces::msg::RigidBody::_mean_error_type arg)
   {
     msg_.mean_error = std::move(arg);
-    return Init_RigidBody_x(msg_);
+    return Init_RigidBody_p(msg_);
   }
 
 private:

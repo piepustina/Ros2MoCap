@@ -40,6 +40,14 @@ class Metaclass_RigidBody(type):
             cls._TYPE_SUPPORT = module.type_support_msg__msg__rigid_body
             cls._DESTROY_ROS_MESSAGE = module.destroy_ros_message_msg__msg__rigid_body
 
+            from mocap_interfaces.msg import Point
+            if Point.__class__._TYPE_SUPPORT is None:
+                Point.__class__.__import_type_support__()
+
+            from mocap_interfaces.msg import UnitQuaternion
+            if UnitQuaternion.__class__._TYPE_SUPPORT is None:
+                UnitQuaternion.__class__.__import_type_support__()
+
     @classmethod
     def __prepare__(cls, name, bases, **kwargs):
         # list constant names here so that they appear in the help text of
@@ -56,39 +64,24 @@ class RigidBody(metaclass=Metaclass_RigidBody):
         '_id',
         '_valid',
         '_mean_error',
-        '_x',
-        '_y',
-        '_z',
-        '_qx',
-        '_qy',
-        '_qz',
-        '_qw',
+        '_p',
+        '_q',
     ]
 
     _fields_and_field_types = {
         'id': 'int64',
         'valid': 'boolean',
         'mean_error': 'double',
-        'x': 'double',
-        'y': 'double',
-        'z': 'double',
-        'qx': 'double',
-        'qy': 'double',
-        'qz': 'double',
-        'qw': 'double',
+        'p': 'mocap_interfaces/Point',
+        'q': 'mocap_interfaces/UnitQuaternion',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.BasicType('int64'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('double'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['mocap_interfaces', 'msg'], 'Point'),  # noqa: E501
+        rosidl_parser.definition.NamespacedType(['mocap_interfaces', 'msg'], 'UnitQuaternion'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -98,13 +91,10 @@ class RigidBody(metaclass=Metaclass_RigidBody):
         self.id = kwargs.get('id', int())
         self.valid = kwargs.get('valid', bool())
         self.mean_error = kwargs.get('mean_error', float())
-        self.x = kwargs.get('x', float())
-        self.y = kwargs.get('y', float())
-        self.z = kwargs.get('z', float())
-        self.qx = kwargs.get('qx', float())
-        self.qy = kwargs.get('qy', float())
-        self.qz = kwargs.get('qz', float())
-        self.qw = kwargs.get('qw', float())
+        from mocap_interfaces.msg import Point
+        self.p = kwargs.get('p', Point())
+        from mocap_interfaces.msg import UnitQuaternion
+        self.q = kwargs.get('q', UnitQuaternion())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -141,19 +131,9 @@ class RigidBody(metaclass=Metaclass_RigidBody):
             return False
         if self.mean_error != other.mean_error:
             return False
-        if self.x != other.x:
+        if self.p != other.p:
             return False
-        if self.y != other.y:
-            return False
-        if self.z != other.z:
-            return False
-        if self.qx != other.qx:
-            return False
-        if self.qy != other.qy:
-            return False
-        if self.qz != other.qz:
-            return False
-        if self.qw != other.qw:
+        if self.q != other.q:
             return False
         return True
 
@@ -204,92 +184,29 @@ class RigidBody(metaclass=Metaclass_RigidBody):
         self._mean_error = value
 
     @property
-    def x(self):
-        """Message field 'x'."""
-        return self._x
+    def p(self):
+        """Message field 'p'."""
+        return self._p
 
-    @x.setter
-    def x(self, value):
+    @p.setter
+    def p(self, value):
         if __debug__:
+            from mocap_interfaces.msg import Point
             assert \
-                isinstance(value, float), \
-                "The 'x' field must be of type 'float'"
-        self._x = value
+                isinstance(value, Point), \
+                "The 'p' field must be a sub message of type 'Point'"
+        self._p = value
 
     @property
-    def y(self):
-        """Message field 'y'."""
-        return self._y
+    def q(self):
+        """Message field 'q'."""
+        return self._q
 
-    @y.setter
-    def y(self, value):
+    @q.setter
+    def q(self, value):
         if __debug__:
+            from mocap_interfaces.msg import UnitQuaternion
             assert \
-                isinstance(value, float), \
-                "The 'y' field must be of type 'float'"
-        self._y = value
-
-    @property
-    def z(self):
-        """Message field 'z'."""
-        return self._z
-
-    @z.setter
-    def z(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'z' field must be of type 'float'"
-        self._z = value
-
-    @property
-    def qx(self):
-        """Message field 'qx'."""
-        return self._qx
-
-    @qx.setter
-    def qx(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'qx' field must be of type 'float'"
-        self._qx = value
-
-    @property
-    def qy(self):
-        """Message field 'qy'."""
-        return self._qy
-
-    @qy.setter
-    def qy(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'qy' field must be of type 'float'"
-        self._qy = value
-
-    @property
-    def qz(self):
-        """Message field 'qz'."""
-        return self._qz
-
-    @qz.setter
-    def qz(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'qz' field must be of type 'float'"
-        self._qz = value
-
-    @property
-    def qw(self):
-        """Message field 'qw'."""
-        return self._qw
-
-    @qw.setter
-    def qw(self, value):
-        if __debug__:
-            assert \
-                isinstance(value, float), \
-                "The 'qw' field must be of type 'float'"
-        self._qw = value
+                isinstance(value, UnitQuaternion), \
+                "The 'q' field must be a sub message of type 'UnitQuaternion'"
+        self._q = value

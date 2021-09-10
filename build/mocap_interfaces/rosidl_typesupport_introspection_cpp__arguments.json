@@ -3,6 +3,8 @@
   "output_dir": "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_cpp/mocap_interfaces",
   "template_dir": "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource",
   "idl_tuples": [
+    "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces:msg/Point.idl",
+    "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces:msg/UnitQuaternion.idl",
     "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces:msg/RigidBody.idl",
     "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces:msg/RigidBodyArray.idl"
   ],
@@ -15,6 +17,8 @@
     "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
     "/opt/ros/foxy/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces/msg/Point.idl",
+    "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces/msg/UnitQuaternion.idl",
     "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces/msg/RigidBody.idl",
     "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_adapter/mocap_interfaces/msg/RigidBodyArray.idl"
   ]

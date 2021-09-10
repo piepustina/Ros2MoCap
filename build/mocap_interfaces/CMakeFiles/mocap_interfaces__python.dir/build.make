@@ -57,9 +57,35 @@ include CMakeFiles/mocap_interfaces__python.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mocap_interfaces__python.dir/flags.make
 
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o: CMakeFiles/mocap_interfaces__python.dir/flags.make
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o: rosidl_generator_py/mocap_interfaces/msg/_point_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_point_s.c
+
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_point_s.c > CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.i
+
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_point_s.c -o CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.s
+
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o: CMakeFiles/mocap_interfaces__python.dir/flags.make
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o: rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c
+
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c > CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.i
+
+CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c -o CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.s
+
 CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o: CMakeFiles/mocap_interfaces__python.dir/flags.make
 CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c
 
 CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.i: cmake_force
@@ -72,7 +98,7 @@ CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg
 
 CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o: CMakeFiles/mocap_interfaces__python.dir/flags.make
 CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c
 
 CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.i: cmake_force
@@ -85,12 +111,16 @@ CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg
 
 # Object files for target mocap_interfaces__python
 mocap_interfaces__python_OBJECTS = \
+"CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o" \
+"CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o" \
 "CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o" \
 "CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o"
 
 # External object files for target mocap_interfaces__python
 mocap_interfaces__python_EXTERNAL_OBJECTS =
 
+rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o
+rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o
 rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o
 rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o
 rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: CMakeFiles/mocap_interfaces__python.dir/build.make
@@ -102,7 +132,7 @@ rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: /opt/ros/fo
 rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: /opt/ros/foxy/lib/librcpputils.so
 rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: /opt/ros/foxy/lib/librcutils.so
 rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so: CMakeFiles/mocap_interfaces__python.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mocap_interfaces__python.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

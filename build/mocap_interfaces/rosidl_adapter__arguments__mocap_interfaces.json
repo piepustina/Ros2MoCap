@@ -1,6 +1,8 @@
 {
   "package_name": "mocap_interfaces",
   "non_idl_tuples": [
+    "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces:msg/Point.msg",
+    "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces:msg/UnitQuaternion.msg",
     "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces:msg/RigidBody.msg",
     "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces:msg/RigidBodyArray.msg"
   ]

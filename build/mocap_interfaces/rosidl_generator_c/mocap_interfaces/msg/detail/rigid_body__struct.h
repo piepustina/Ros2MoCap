@@ -17,19 +17,20 @@ extern "C"
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'p'
+#include "mocap_interfaces/msg/detail/point__struct.h"
+// Member 'q'
+#include "mocap_interfaces/msg/detail/unit_quaternion__struct.h"
+
 // Struct defined in msg/RigidBody in the package mocap_interfaces.
 typedef struct mocap_interfaces__msg__RigidBody
 {
   int64_t id;
   bool valid;
   double mean_error;
-  double x;
-  double y;
-  double z;
-  double qx;
-  double qy;
-  double qz;
-  double qw;
+  mocap_interfaces__msg__Point p;
+  mocap_interfaces__msg__UnitQuaternion q;
 } mocap_interfaces__msg__RigidBody;
 
 // Struct for a sequence of mocap_interfaces__msg__RigidBody.

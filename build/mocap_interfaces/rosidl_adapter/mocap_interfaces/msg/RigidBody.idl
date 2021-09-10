@@ -2,6 +2,8 @@
 // with input from mocap_interfaces/msg/RigidBody.msg
 // generated code does not contain a copyright notice
 
+#include "mocap_interfaces/msg/Point.idl"
+#include "mocap_interfaces/msg/UnitQuaternion.idl"
 
 module mocap_interfaces {
   module msg {
@@ -21,21 +23,11 @@ module mocap_interfaces {
 
       @verbatim (language="comment", text=
         " Position of the body")
-      double x;
-
-      double y;
-
-      double z;
+      mocap_interfaces::msg::Point p;
 
       @verbatim (language="comment", text=
-        "Orientation of the body as quaternion")
-      double qx;
-
-      double qy;
-
-      double qz;
-
-      double qw;
+        "Orientation of the body as unit quaternion")
+      mocap_interfaces::msg::UnitQuaternion q;
     };
   };
 };

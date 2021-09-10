@@ -16,6 +16,52 @@
 
 
 // forward declaration of message dependencies and their conversion functions
+namespace mocap_interfaces
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const mocap_interfaces::msg::Point &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  mocap_interfaces::msg::Point &);
+size_t get_serialized_size(
+  const mocap_interfaces::msg::Point &,
+  size_t current_alignment);
+size_t
+max_serialized_size_Point(
+  bool & full_bounded,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace mocap_interfaces
+
+namespace mocap_interfaces
+{
+namespace msg
+{
+namespace typesupport_fastrtps_cpp
+{
+bool cdr_serialize(
+  const mocap_interfaces::msg::UnitQuaternion &,
+  eprosima::fastcdr::Cdr &);
+bool cdr_deserialize(
+  eprosima::fastcdr::Cdr &,
+  mocap_interfaces::msg::UnitQuaternion &);
+size_t get_serialized_size(
+  const mocap_interfaces::msg::UnitQuaternion &,
+  size_t current_alignment);
+size_t
+max_serialized_size_UnitQuaternion(
+  bool & full_bounded,
+  size_t current_alignment);
+}  // namespace typesupport_fastrtps_cpp
+}  // namespace msg
+}  // namespace mocap_interfaces
+
 
 namespace mocap_interfaces
 {
@@ -38,20 +84,14 @@ cdr_serialize(
   cdr << (ros_message.valid ? true : false);
   // Member: mean_error
   cdr << ros_message.mean_error;
-  // Member: x
-  cdr << ros_message.x;
-  // Member: y
-  cdr << ros_message.y;
-  // Member: z
-  cdr << ros_message.z;
-  // Member: qx
-  cdr << ros_message.qx;
-  // Member: qy
-  cdr << ros_message.qy;
-  // Member: qz
-  cdr << ros_message.qz;
-  // Member: qw
-  cdr << ros_message.qw;
+  // Member: p
+  mocap_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.p,
+    cdr);
+  // Member: q
+  mocap_interfaces::msg::typesupport_fastrtps_cpp::cdr_serialize(
+    ros_message.q,
+    cdr);
   return true;
 }
 
@@ -74,26 +114,13 @@ cdr_deserialize(
   // Member: mean_error
   cdr >> ros_message.mean_error;
 
-  // Member: x
-  cdr >> ros_message.x;
+  // Member: p
+  mocap_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.p);
 
-  // Member: y
-  cdr >> ros_message.y;
-
-  // Member: z
-  cdr >> ros_message.z;
-
-  // Member: qx
-  cdr >> ros_message.qx;
-
-  // Member: qy
-  cdr >> ros_message.qy;
-
-  // Member: qz
-  cdr >> ros_message.qz;
-
-  // Member: qw
-  cdr >> ros_message.qw;
+  // Member: q
+  mocap_interfaces::msg::typesupport_fastrtps_cpp::cdr_deserialize(
+    cdr, ros_message.q);
 
   return true;
 }
@@ -129,48 +156,16 @@ get_serialized_size(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // Member: x
-  {
-    size_t item_size = sizeof(ros_message.x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: y
-  {
-    size_t item_size = sizeof(ros_message.y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: z
-  {
-    size_t item_size = sizeof(ros_message.z);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: qx
-  {
-    size_t item_size = sizeof(ros_message.qx);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: qy
-  {
-    size_t item_size = sizeof(ros_message.qy);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: qz
-  {
-    size_t item_size = sizeof(ros_message.qz);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // Member: qw
-  {
-    size_t item_size = sizeof(ros_message.qw);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // Member: p
+
+  current_alignment +=
+    mocap_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.p, current_alignment);
+  // Member: q
+
+  current_alignment +=
+    mocap_interfaces::msg::typesupport_fastrtps_cpp::get_serialized_size(
+    ros_message.q, current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -213,60 +208,28 @@ max_serialized_size_RigidBody(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
-  // Member: x
+  // Member: p
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        mocap_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_Point(
+        full_bounded, current_alignment);
+    }
   }
 
-  // Member: y
+  // Member: q
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
 
-  // Member: z
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: qx
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: qy
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: qz
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-
-  // Member: qw
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        mocap_interfaces::msg::typesupport_fastrtps_cpp::max_serialized_size_UnitQuaternion(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

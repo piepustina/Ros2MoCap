@@ -1,0 +1,35 @@
+-- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found mocap_interfaces: 0.0.0 (/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub
+[35m[1mScanning dependencies of target mocap_pub[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/mocap_pub.dir/src/MoCapNatNetClient.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/mocap_pub.dir/src/MoCapPublisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mocap_pub[0m
+[100%] Built target mocap_pub
+-- Install configuration: ""
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/lib/mocap_pub/mocap_pub
+-- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/lib/mocap_pub/mocap_pub" to ""
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/package_run_dependencies/mocap_pub
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/parent_prefix_path/mocap_pub
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/ament_prefix_path.sh
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/path.sh
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/path.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.bash
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.sh
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.zsh
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.dsv
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/package.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/packages/mocap_pub
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/cmake/mocap_pubConfig.cmake
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/cmake/mocap_pubConfig-version.cmake
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/package.xml

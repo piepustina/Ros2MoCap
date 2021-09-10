@@ -1,0 +1,52 @@
+[0.018s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub -- -j8 -l8
+[0.041s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.059s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.270s] -- Found rclcpp: 2.3.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.316s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.428s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.489s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.491s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.604s] -- Found mocap_interfaces: 0.0.0 (/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake)
+[0.671s] -- Configuring done
+[0.679s] -- Generating done
+[0.680s] -- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub
+[0.702s] [35m[1mScanning dependencies of target mocap_pub[0m
+[0.730s] [ 33%] [32mBuilding CXX object CMakeFiles/mocap_pub.dir/src/MoCapNatNetClient.cpp.o[0m
+[0.730s] [ 66%] [32mBuilding CXX object CMakeFiles/mocap_pub.dir/src/MoCapPublisher.cpp.o[0m
+[1.896s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_pub/src/MoCapNatNetClient.cpp:[m[K In function ‘[01m[Kvoid dataFrameHandler(sFrameOfMocapData*, void*)[m[K’:
+[1.896s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_pub/src/MoCapNatNetClient.cpp:230:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbOccluded[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[1.896s]   230 |     bool [01;35m[KbOccluded[m[K;     // marker was not visible (occluded) in this frame
+[1.897s]       |          [01;35m[K^~~~~~~~~[m[K
+[1.897s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_pub/src/MoCapNatNetClient.cpp:231:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbPCSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[1.897s]   231 |     bool [01;35m[KbPCSolved[m[K;     // reported position provided by point cloud solve
+[1.897s]       |          [01;35m[K^~~~~~~~~[m[K
+[1.897s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_pub/src/MoCapNatNetClient.cpp:232:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbModelSolved[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[1.897s]   232 |     bool [01;35m[KbModelSolved[m[K;  // reported position provided by model solve
+[1.897s]       |          [01;35m[K^~~~~~~~~~~~[m[K
+[1.897s] [01m[K/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_pub/src/MoCapNatNetClient.cpp:233:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[KbHasModel[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[1.897s]   233 |     bool [01;35m[KbHasModel[m[K;     // marker has an associated asset in the data stream
+[1.897s]       |          [01;35m[K^~~~~~~~~[m[K
+[3.160s] [100%] [32m[1mLinking CXX executable mocap_pub[0m
+[3.318s] [100%] Built target mocap_pub
+[3.327s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub' returned '0': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub -- -j8 -l8
+[3.348s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub
+[3.355s] -- Install configuration: ""
+[3.356s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/lib/mocap_pub/mocap_pub
+[3.356s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/lib/mocap_pub/mocap_pub" to ""
+[3.357s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/package_run_dependencies/mocap_pub
+[3.357s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/parent_prefix_path/mocap_pub
+[3.357s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/ament_prefix_path.sh
+[3.357s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/ament_prefix_path.dsv
+[3.357s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/path.sh
+[3.357s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/environment/path.dsv
+[3.357s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.bash
+[3.357s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.sh
+[3.358s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.zsh
+[3.358s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/local_setup.dsv
+[3.358s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/package.dsv
+[3.358s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/ament_index/resource_index/packages/mocap_pub
+[3.358s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/cmake/mocap_pubConfig.cmake
+[3.358s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/cmake/mocap_pubConfig-version.cmake
+[3.358s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_pub/share/mocap_pub/package.xml
+[3.360s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub' returned '0': AMENT_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces:/opt/ros/foxy LD_LIBRARY_PATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_pub

@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_point_s.c" "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o"
   "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c" "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o"
   "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c" "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o"
+  "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c" "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

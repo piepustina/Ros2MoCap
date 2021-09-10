@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__struct.hpp
+rosidl_runtime_cpp/bounded_vector.hpp
+-
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+array
+-
+memory
+-
+string
+-
+vector
+-
+
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
@@ -21,6 +37,10 @@ string
 -
 vector
 -
+mocap_interfaces/msg/detail/point__struct.hpp
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/mocap_interfaces/msg/detail/point__struct.hpp
+mocap_interfaces/msg/detail/unit_quaternion__struct.hpp
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/mocap_interfaces/msg/detail/unit_quaternion__struct.hpp
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__builder.hpp
 mocap_interfaces/msg/detail/rigid_body_array__struct.hpp
@@ -58,6 +78,22 @@ rosidl_runtime_cpp/traits.hpp
 stdint.h
 -
 type_traits
+-
+
+/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__struct.hpp
+rosidl_runtime_cpp/bounded_vector.hpp
+-
+rosidl_runtime_cpp/message_initialization.hpp
+-
+algorithm
+-
+array
+-
+memory
+-
+string
+-
+vector
 -
 
 /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rigid_body_array.hpp

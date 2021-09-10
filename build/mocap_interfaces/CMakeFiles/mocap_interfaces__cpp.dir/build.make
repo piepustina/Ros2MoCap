@@ -53,6 +53,14 @@ CMAKE_BINARY_DIR = /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_
 # Include the progress variables for this target.
 include CMakeFiles/mocap_interfaces__cpp.dir/progress.make
 
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/point__builder.hpp
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/point__struct.hpp
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/point__traits.hpp
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/unit_quaternion.hpp
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__builder.hpp
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__struct.hpp
+CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__traits.hpp
 CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
 CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__builder.hpp
 CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__struct.hpp
@@ -63,48 +71,82 @@ CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/deta
 CMakeFiles/mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__traits.hpp
 
 
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_cpp/__init__.py
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__builder.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__struct.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__traits.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: rosidl_adapter/mocap_interfaces/msg/RigidBody.idl
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: rosidl_adapter/mocap_interfaces/msg/RigidBodyArray.idl
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/lib/rosidl_generator_cpp/rosidl_generator_cpp
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_generator_cpp/__init__.py
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__builder.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__struct.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/action__traits.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: /opt/ros/foxy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: rosidl_adapter/mocap_interfaces/msg/Point.idl
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: rosidl_adapter/mocap_interfaces/msg/UnitQuaternion.idl
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: rosidl_adapter/mocap_interfaces/msg/RigidBody.idl
+rosidl_generator_cpp/mocap_interfaces/msg/point.hpp: rosidl_adapter/mocap_interfaces/msg/RigidBodyArray.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_generator_cpp__arguments.json
 
-rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__builder.hpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+rosidl_generator_cpp/mocap_interfaces/msg/detail/point__builder.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/point__builder.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/detail/point__struct.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/point__struct.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/detail/point__traits.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/point__traits.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/unit_quaternion.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/unit_quaternion.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__builder.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__builder.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__struct.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__struct.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__traits.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__traits.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+
+rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__builder.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__builder.hpp
 
-rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__struct.hpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__struct.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__struct.hpp
 
-rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__traits.hpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__traits.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__traits.hpp
 
-rosidl_generator_cpp/mocap_interfaces/msg/rigid_body_array.hpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+rosidl_generator_cpp/mocap_interfaces/msg/rigid_body_array.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/rigid_body_array.hpp
 
-rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__builder.hpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__builder.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__builder.hpp
 
-rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__struct.hpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__struct.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__struct.hpp
 
-rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__traits.hpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
+rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__traits.hpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body_array__traits.hpp
 
 mocap_interfaces__cpp: CMakeFiles/mocap_interfaces__cpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/point.hpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/point__builder.hpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/point__struct.hpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/point__traits.hpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/unit_quaternion.hpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__builder.hpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__struct.hpp
+mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/unit_quaternion__traits.hpp
 mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/rigid_body.hpp
 mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__builder.hpp
 mocap_interfaces__cpp: rosidl_generator_cpp/mocap_interfaces/msg/detail/rigid_body__struct.hpp

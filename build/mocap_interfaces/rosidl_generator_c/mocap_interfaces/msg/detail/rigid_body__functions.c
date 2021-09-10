@@ -9,6 +9,12 @@
 #include <string.h>
 
 
+// Include directives for member types
+// Member `p`
+#include "mocap_interfaces/msg/detail/point__functions.h"
+// Member `q`
+#include "mocap_interfaces/msg/detail/unit_quaternion__functions.h"
+
 bool
 mocap_interfaces__msg__RigidBody__init(mocap_interfaces__msg__RigidBody * msg)
 {
@@ -18,13 +24,16 @@ mocap_interfaces__msg__RigidBody__init(mocap_interfaces__msg__RigidBody * msg)
   // id
   // valid
   // mean_error
-  // x
-  // y
-  // z
-  // qx
-  // qy
-  // qz
-  // qw
+  // p
+  if (!mocap_interfaces__msg__Point__init(&msg->p)) {
+    mocap_interfaces__msg__RigidBody__fini(msg);
+    return false;
+  }
+  // q
+  if (!mocap_interfaces__msg__UnitQuaternion__init(&msg->q)) {
+    mocap_interfaces__msg__RigidBody__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -37,13 +46,10 @@ mocap_interfaces__msg__RigidBody__fini(mocap_interfaces__msg__RigidBody * msg)
   // id
   // valid
   // mean_error
-  // x
-  // y
-  // z
-  // qx
-  // qy
-  // qz
-  // qw
+  // p
+  mocap_interfaces__msg__Point__fini(&msg->p);
+  // q
+  mocap_interfaces__msg__UnitQuaternion__fini(&msg->q);
 }
 
 mocap_interfaces__msg__RigidBody *

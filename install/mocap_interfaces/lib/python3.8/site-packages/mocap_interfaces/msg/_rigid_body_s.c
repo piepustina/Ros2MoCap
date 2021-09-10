@@ -16,6 +16,10 @@
 #include "mocap_interfaces/msg/detail/rigid_body__struct.h"
 #include "mocap_interfaces/msg/detail/rigid_body__functions.h"
 
+bool mocap_interfaces__msg__point__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * mocap_interfaces__msg__point__convert_to_py(void * raw_ros_message);
+bool mocap_interfaces__msg__unit_quaternion__convert_from_py(PyObject * _pymsg, void * _ros_message);
+PyObject * mocap_interfaces__msg__unit_quaternion__convert_to_py(void * raw_ros_message);
 
 ROSIDL_GENERATOR_C_EXPORT
 bool mocap_interfaces__msg__rigid_body__convert_from_py(PyObject * _pymsg, void * _ros_message)
@@ -77,67 +81,26 @@ bool mocap_interfaces__msg__rigid_body__convert_from_py(PyObject * _pymsg, void 
     ros_message->mean_error = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // x
-    PyObject * field = PyObject_GetAttrString(_pymsg, "x");
+  {  // p
+    PyObject * field = PyObject_GetAttrString(_pymsg, "p");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->x = PyFloat_AS_DOUBLE(field);
+    if (!mocap_interfaces__msg__point__convert_from_py(field, &ros_message->p)) {
+      Py_DECREF(field);
+      return false;
+    }
     Py_DECREF(field);
   }
-  {  // y
-    PyObject * field = PyObject_GetAttrString(_pymsg, "y");
+  {  // q
+    PyObject * field = PyObject_GetAttrString(_pymsg, "q");
     if (!field) {
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->y = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // z
-    PyObject * field = PyObject_GetAttrString(_pymsg, "z");
-    if (!field) {
+    if (!mocap_interfaces__msg__unit_quaternion__convert_from_py(field, &ros_message->q)) {
+      Py_DECREF(field);
       return false;
     }
-    assert(PyFloat_Check(field));
-    ros_message->z = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // qx
-    PyObject * field = PyObject_GetAttrString(_pymsg, "qx");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->qx = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // qy
-    PyObject * field = PyObject_GetAttrString(_pymsg, "qy");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->qy = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // qz
-    PyObject * field = PyObject_GetAttrString(_pymsg, "qz");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->qz = PyFloat_AS_DOUBLE(field);
-    Py_DECREF(field);
-  }
-  {  // qw
-    PyObject * field = PyObject_GetAttrString(_pymsg, "qw");
-    if (!field) {
-      return false;
-    }
-    assert(PyFloat_Check(field));
-    ros_message->qw = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -195,77 +158,28 @@ PyObject * mocap_interfaces__msg__rigid_body__convert_to_py(void * raw_ros_messa
       }
     }
   }
-  {  // x
+  {  // p
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->x);
+    field = mocap_interfaces__msg__point__convert_to_py(&ros_message->p);
+    if (!field) {
+      return NULL;
+    }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "x", field);
+      int rc = PyObject_SetAttrString(_pymessage, "p", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // y
+  {  // q
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->y);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "y", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
+    field = mocap_interfaces__msg__unit_quaternion__convert_to_py(&ros_message->q);
+    if (!field) {
+      return NULL;
     }
-  }
-  {  // z
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->z);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "z", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // qx
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->qx);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "qx", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // qy
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->qy);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "qy", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // qz
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->qz);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "qz", field);
-      Py_DECREF(field);
-      if (rc) {
-        return NULL;
-      }
-    }
-  }
-  {  // qw
-    PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->qw);
-    {
-      int rc = PyObject_SetAttrString(_pymessage, "qw", field);
+      int rc = PyObject_SetAttrString(_pymessage, "q", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

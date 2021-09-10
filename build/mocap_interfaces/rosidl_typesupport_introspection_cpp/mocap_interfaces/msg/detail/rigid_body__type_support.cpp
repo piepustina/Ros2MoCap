@@ -37,7 +37,7 @@ void RigidBody_fini_function(void * message_memory)
   typed_message->~RigidBody();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember RigidBody_message_member_array[10] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember RigidBody_message_member_array[5] = {
   {
     "id",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT64,  // type
@@ -84,14 +84,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember RigidBody_mes
     nullptr  // resize(index) function pointer
   },
   {
-    "x",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    "p",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<mocap_interfaces::msg::Point>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(mocap_interfaces::msg::RigidBody, x),  // bytes offset in struct
+    offsetof(mocap_interfaces::msg::RigidBody, p),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -99,89 +99,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember RigidBody_mes
     nullptr  // resize(index) function pointer
   },
   {
-    "y",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    "q",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
     0,  // upper bound of string
-    nullptr,  // members of sub message
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<mocap_interfaces::msg::UnitQuaternion>(),  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(mocap_interfaces::msg::RigidBody, y),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "z",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(mocap_interfaces::msg::RigidBody, z),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "qx",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(mocap_interfaces::msg::RigidBody, qx),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "qy",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(mocap_interfaces::msg::RigidBody, qy),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "qz",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(mocap_interfaces::msg::RigidBody, qz),  // bytes offset in struct
-    nullptr,  // default value
-    nullptr,  // size() function pointer
-    nullptr,  // get_const(index) function pointer
-    nullptr,  // get(index) function pointer
-    nullptr  // resize(index) function pointer
-  },
-  {
-    "qw",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
-    0,  // upper bound of string
-    nullptr,  // members of sub message
-    false,  // is array
-    0,  // array size
-    false,  // is upper bound
-    offsetof(mocap_interfaces::msg::RigidBody, qw),  // bytes offset in struct
+    offsetof(mocap_interfaces::msg::RigidBody, q),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -193,7 +118,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember RigidBody_mes
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers RigidBody_message_members = {
   "mocap_interfaces::msg",  // message namespace
   "RigidBody",  // message name
-  10,  // number of fields
+  5,  // number of fields
   sizeof(mocap_interfaces::msg::RigidBody),
   RigidBody_message_member_array,  // message members
   RigidBody_init_function,  // function to initialize message memory (memory has to be allocated)

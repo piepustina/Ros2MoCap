@@ -29,7 +29,7 @@ void MoCapPublisher::sendRigidBodyMessage(sRigidBodyData* bodies, int nRigidBodi
   {
     printf("Rigid Body [ID=%d  Error=%3.2f  Valid=%d]\n", bodies[i].ID, bodies[i].MeanError, bodies[i].params & 0x01);
     printf("\tx\ty\tz\tqx\tqy\tqz\tqw\n");
-    printf("\t%3.2f\t%3.2f\t%3.2f\t%3.2f\t%3.2f\t%3.2f\t%3.2f\n",
+    printf("\t%3.5f\t%3.5f\t%3.5f\t%3.2f\t%3.2f\t%3.2f\t%3.2f\n",
       bodies[i].x,
       bodies[i].y,
       bodies[i].z,
@@ -43,13 +43,13 @@ void MoCapPublisher::sendRigidBodyMessage(sRigidBodyData* bodies, int nRigidBodi
       rb.id = bodies[i].ID;
       rb.valid =  bodies[i].params & 0x01;
       rb.mean_error = bodies[i].MeanError;
-      rb.x = bodies[i].x;
-      rb.y = bodies[i].y;
-      rb.z = bodies[i].z;
-      rb.qx = bodies[i].qx;
-      rb.qy = bodies[i].qy;
-      rb.qz = bodies[i].qz;
-      rb.qw = bodies[i].qw;
+      rb.p.x = bodies[i].x;
+      rb.p.y = bodies[i].y;
+      rb.p.z = bodies[i].z;
+      rb.q.x = bodies[i].qx;
+      rb.q.y = bodies[i].qy;
+      rb.q.z = bodies[i].qz;
+      rb.q.w = bodies[i].qw;
 
       // Add the current rigid body to the array of rigid bodies
       msg.rigid_bodies.push_back(rb);

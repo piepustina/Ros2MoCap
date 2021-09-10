@@ -1,0 +1,296 @@
+[0.015s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces -- -j8 -l8
+[0.042s] -- Found ament_cmake: 0.9.8 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.062s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.063s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.207s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.210s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.214s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.329s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.368s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.478s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.556s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.564s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.582s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[0.582s] -- Found python_cmake_module: 0.8.1 (/opt/ros/foxy/share/python_cmake_module/cmake)
+[0.601s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.601s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[0.601s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[0.624s] -- Configuring done
+[0.673s] -- Generating done
+[0.677s] -- Build files have been written to: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces
+[0.704s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.704s] [35m[1mScanning dependencies of target mocap_interfaces__cpp[0m
+[0.711s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.135s] [  3%] Built target mocap_interfaces__cpp
+[1.146s] [  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.147s] [  6%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.153s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.182s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_generator_c[0m
+[1.195s] [  9%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mocap_interfaces/msg/detail/unit_quaternion__functions.c.o[0m
+[1.195s] [ 12%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mocap_interfaces/msg/detail/point__functions.c.o[0m
+[1.196s] [ 12%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mocap_interfaces/msg/detail/rigid_body__functions.c.o[0m
+[1.198s] [ 14%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mocap_interfaces/msg/detail/rigid_body_array__functions.c.o[0m
+[1.205s] [ 15%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_generator_c.dir/rosidl_generator_c/mocap_interfaces/msg/detail/rotation_matrix__functions.c.o[0m
+[1.257s] [ 17%] [32m[1mLinking C shared library libmocap_interfaces__rosidl_generator_c.so[0m
+[1.290s] [ 17%] Built target mocap_interfaces__rosidl_generator_c
+[1.299s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.299s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.569s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_introspection_cpp[0m
+[1.587s] [ 23%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body__type_support.cpp.o[0m
+[1.588s] [ 25%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/point__type_support.cpp.o[0m
+[1.588s] [ 26%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body_array__type_support.cpp.o[0m
+[1.589s] [ 26%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/unit_quaternion__type_support.cpp.o[0m
+[1.696s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_c[0m
+[1.714s] [ 28%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap_interfaces/msg/point__type_support.cpp.o[0m
+[1.765s] [ 30%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap_interfaces/msg/unit_quaternion__type_support.cpp.o[0m
+[1.797s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_cpp[0m
+[1.814s] [ 31%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap_interfaces/msg/point__type_support.cpp.o[0m
+[1.818s] [ 33%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap_interfaces/msg/rigid_body__type_support.cpp.o[0m
+[1.850s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_introspection_c[0m
+[1.868s] [ 34%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap_interfaces/msg/rigid_body_array__type_support.cpp.o[0m
+[1.871s] [ 36%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.o[0m
+[1.906s] [ 38%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/mocap_interfaces/msg/rotation_matrix__type_support.cpp.o[0m
+[1.909s] [ 39%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.o[0m
+[1.945s] [ 41%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_c.so[0m
+[1.946s] [ 42%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o[0m
+[1.965s] [ 44%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o[0m
+[1.981s] [ 46%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rotation_matrix__type_support.cpp.o[0m
+[1.986s] [ 47%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rotation_matrix__type_support.c.o[0m
+[1.998s] [ 47%] Built target mocap_interfaces__rosidl_typesupport_c
+[2.004s] [ 49%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap_interfaces/msg/unit_quaternion__type_support.cpp.o[0m
+[2.009s] [ 50%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap_interfaces/msg/rigid_body_array__type_support.cpp.o[0m
+[2.010s] [ 52%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap_interfaces/msg/rigid_body__type_support.cpp.o[0m
+[2.023s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[2.027s] [ 53%] [32m[1mLinking C shared library libmocap_interfaces__rosidl_typesupport_introspection_c.so[0m
+[2.060s] [ 55%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap_interfaces/msg/detail/dds_fastrtps/point__type_support.cpp.o[0m
+[2.062s] [ 57%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap_interfaces/msg/detail/dds_fastrtps/unit_quaternion__type_support.cpp.o[0m
+[2.084s] [ 57%] Built target mocap_interfaces__rosidl_typesupport_introspection_c
+[2.094s] [ 58%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap_interfaces/msg/detail/dds_fastrtps/rigid_body__type_support.cpp.o[0m
+[2.216s] [ 60%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mocap_interfaces/msg/rotation_matrix__type_support.cpp.o[0m
+[2.383s] [ 61%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[2.384s] [ 63%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap_interfaces/msg/detail/dds_fastrtps/rigid_body_array__type_support.cpp.o[0m
+[2.419s] [ 65%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mocap_interfaces/msg/detail/dds_fastrtps/rotation_matrix__type_support.cpp.o[0m
+[2.500s] [ 65%] Built target mocap_interfaces__rosidl_typesupport_introspection_cpp
+[2.558s] [ 66%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_cpp.so[0m
+[2.598s] [ 66%] Built target mocap_interfaces__rosidl_typesupport_cpp
+[2.869s] [ 68%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.937s] [ 68%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_cpp
+[2.945s] [ 69%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.319s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_fastrtps_c[0m
+[3.332s] [ 73%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap_interfaces/msg/detail/unit_quaternion__type_support_c.cpp.o[0m
+[3.332s] [ 73%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap_interfaces/msg/detail/rigid_body__type_support_c.cpp.o[0m
+[3.333s] [ 74%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap_interfaces/msg/detail/rigid_body_array__type_support_c.cpp.o[0m
+[3.333s] [ 76%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap_interfaces/msg/detail/point__type_support_c.cpp.o[0m
+[3.333s] [ 77%] [32mBuilding CXX object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mocap_interfaces/msg/detail/rotation_matrix__type_support_c.cpp.o[0m
+[3.746s] [ 79%] [32m[1mLinking CXX shared library libmocap_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[3.816s] [ 79%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_c
+[3.832s] [ 79%] Built target mocap_interfaces
+[3.840s] [35m[1mScanning dependencies of target mocap_interfaces__py[0m
+[3.849s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.594s] [ 80%] Built target mocap_interfaces__py
+[4.603s] [35m[1mScanning dependencies of target mocap_interfaces__python[0m
+[4.623s] [ 82%] [32mBuilding C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rotation_matrix_s.c.o[0m
+[4.624s] [ 85%] [32mBuilding C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c.o[0m
+[4.624s] [ 85%] [32mBuilding C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c.o[0m
+[4.624s] [ 88%] [32mBuilding C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_point_s.c.o[0m
+[4.624s] [ 88%] [32mBuilding C object CMakeFiles/mocap_interfaces__python.dir/rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c.o[0m
+[4.732s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/mocap_interfaces/libmocap_interfaces__python.so[0m
+[4.765s] [ 90%] Built target mocap_interfaces__python
+[4.774s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.774s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_introspection_c__pyext[0m
+[4.775s] [35m[1mScanning dependencies of target mocap_interfaces__rosidl_typesupport_c__pyext[0m
+[4.788s] [ 92%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.788s] [ 93%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.790s] [ 95%] [32mBuilding C object CMakeFiles/mocap_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[4.860s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.886s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.889s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[4.889s] [100%] Built target mocap_interfaces__rosidl_typesupport_c__pyext
+[4.915s] [100%] Built target mocap_interfaces__rosidl_typesupport_introspection_c__pyext
+[4.940s] [100%] Built target mocap_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[4.950s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces -- -j8 -l8
+[5.032s] Invoking command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces
+[5.039s] -- Install configuration: ""
+[5.039s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/ament_index/resource_index/rosidl_interfaces/mocap_interfaces
+[5.040s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces
+[5.040s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg
+[5.040s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__type_support.h
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__functions.c
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__functions.h
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__struct.h
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__type_support.h
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__functions.c
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__type_support.h
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__functions.c
+[5.040s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__functions.c
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__functions.c
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__functions.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__struct.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__type_support.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__functions.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__functions.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__functions.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__struct.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__struct.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__struct.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__type_support.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rigid_body_array.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/point.h
+[5.041s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rotation_matrix.h
+[5.042s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/unit_quaternion.h
+[5.042s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rigid_body.h
+[5.042s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.042s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/library_path.sh
+[5.042s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/library_path.dsv
+[5.042s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_generator_c.so
+[5.042s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_generator_c.so" to ""
+[5.043s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces
+[5.043s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg
+[5.043s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail
+[5.043s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_fastrtps_c.h
+[5.043s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__rosidl_typesupport_fastrtps_c.h
+[5.043s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__rosidl_typesupport_fastrtps_c.h
+[5.043s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_fastrtps_c.h
+[5.043s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_fastrtps_c.h
+[5.043s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.044s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.044s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.044s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces
+[5.044s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg
+[5.044s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail
+[5.045s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_fastrtps_cpp.hpp
+[5.045s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/dds_fastrtps
+[5.045s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_fastrtps_cpp.hpp
+[5.045s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__rosidl_typesupport_fastrtps_cpp.hpp
+[5.045s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__rosidl_typesupport_fastrtps_cpp.hpp
+[5.045s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_fastrtps_cpp.hpp
+[5.045s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.045s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.046s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.046s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces
+[5.046s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg
+[5.046s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.046s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail
+[5.046s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__rosidl_typesupport_introspection_c.h
+[5.046s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+[5.046s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__type_support.c
+[5.046s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
+[5.047s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__type_support.c
+[5.047s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__type_support.c
+[5.047s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_introspection_c.h
+[5.047s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_introspection_c.h
+[5.047s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__type_support.c
+[5.047s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__type_support.c
+[5.048s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_introspection_c.so
+[5.048s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.048s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_c.so
+[5.048s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_c.so" to ""
+[5.049s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces
+[5.049s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg
+[5.049s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail
+[5.049s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__struct.hpp
+[5.049s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__builder.hpp
+[5.049s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__builder.hpp
+[5.049s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__struct.hpp
+[5.049s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__traits.hpp
+[5.049s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__builder.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__traits.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__struct.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__traits.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__builder.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__traits.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__struct.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__builder.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__traits.hpp
+[5.050s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__struct.hpp
+[5.051s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rigid_body.hpp
+[5.051s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/unit_quaternion.hpp
+[5.051s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rigid_body_array.hpp
+[5.051s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/point.hpp
+[5.051s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/rotation_matrix.hpp
+[5.051s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces
+[5.051s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg
+[5.051s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail
+[5.051s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__type_support.cpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__type_support.cpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__type_support.cpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_introspection_cpp.hpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__type_support.cpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/unit_quaternion__type_support.cpp
+[5.052s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_introspection_cpp.hpp
+[5.053s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/include/mocap_interfaces/msg/detail/rotation_matrix__rosidl_typesupport_introspection_cpp.hpp
+[5.053s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.053s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.054s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_cpp.so
+[5.054s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.054s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/pythonpath.sh
+[5.054s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/pythonpath.dsv
+[5.054s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/__init__.py
+[5.078s] Compiling '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/__init__.py'...
+[5.082s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_rigid_body_s.c
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_unit_quaternion_s.c
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_unit_quaternion.py
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_point.py
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_rigid_body.py
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_rotation_matrix_s.c
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/__init__.py
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_rigid_body_array_s.c
+[5.082s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_rotation_matrix.py
+[5.083s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_point_s.c
+[5.083s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/msg/_rigid_body_array.py
+[5.083s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[5.083s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.084s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[5.084s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.085s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[5.085s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/python3.8/site-packages/mocap_interfaces/mocap_interfaces_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[5.086s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__python.so
+[5.086s] -- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/lib/libmocap_interfaces__python.so" to ""
+[5.086s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/Point.idl
+[5.086s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/UnitQuaternion.idl
+[5.086s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/RigidBody.idl
+[5.087s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/RigidBodyArray.idl
+[5.087s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/RotationMatrix.idl
+[5.087s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/Point.msg
+[5.087s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/UnitQuaternion.msg
+[5.087s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/RigidBody.msg
+[5.087s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/RigidBodyArray.msg
+[5.087s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/msg/RotationMatrix.msg
+[5.087s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/ament_index/resource_index/package_run_dependencies/mocap_interfaces
+[5.087s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/ament_index/resource_index/parent_prefix_path/mocap_interfaces
+[5.087s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/ament_prefix_path.sh
+[5.088s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/ament_prefix_path.dsv
+[5.088s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/path.sh
+[5.088s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/environment/path.dsv
+[5.088s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/local_setup.bash
+[5.088s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/local_setup.sh
+[5.088s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/local_setup.zsh
+[5.088s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/local_setup.dsv
+[5.088s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/package.dsv
+[5.088s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/ament_index/resource_index/packages/mocap_interfaces
+[5.088s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_generator_cExport.cmake
+[5.088s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.089s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.089s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.089s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_cExport.cmake
+[5.089s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.089s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_generator_cppExport.cmake
+[5.089s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.089s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.089s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_cppExport.cmake
+[5.090s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.090s] -- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfacesConfig.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/cmake/mocap_interfacesConfig-version.cmake
+[5.090s] -- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/mocap_interfaces/share/mocap_interfaces/package.xml
+[5.092s] Invoked command in '/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces

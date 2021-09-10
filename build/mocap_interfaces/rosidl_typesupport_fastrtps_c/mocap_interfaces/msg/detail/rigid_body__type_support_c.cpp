@@ -34,8 +34,30 @@ extern "C"
 {
 #endif
 
+#include "mocap_interfaces/msg/detail/point__functions.h"  // p
+#include "mocap_interfaces/msg/detail/unit_quaternion__functions.h"  // q
 
 // forward declare type support functions
+size_t get_serialized_size_mocap_interfaces__msg__Point(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_mocap_interfaces__msg__Point(
+  bool & full_bounded,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, mocap_interfaces, msg, Point)();
+size_t get_serialized_size_mocap_interfaces__msg__UnitQuaternion(
+  const void * untyped_ros_message,
+  size_t current_alignment);
+
+size_t max_serialized_size_mocap_interfaces__msg__UnitQuaternion(
+  bool & full_bounded,
+  size_t current_alignment);
+
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_fastrtps_c, mocap_interfaces, msg, UnitQuaternion)();
 
 
 using _RigidBody__ros_msg_type = mocap_interfaces__msg__RigidBody;
@@ -64,39 +86,32 @@ static bool _RigidBody__cdr_serialize(
     cdr << ros_message->mean_error;
   }
 
-  // Field name: x
+  // Field name: p
   {
-    cdr << ros_message->x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, mocap_interfaces, msg, Point
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->p, cdr))
+    {
+      return false;
+    }
   }
 
-  // Field name: y
+  // Field name: q
   {
-    cdr << ros_message->y;
-  }
-
-  // Field name: z
-  {
-    cdr << ros_message->z;
-  }
-
-  // Field name: qx
-  {
-    cdr << ros_message->qx;
-  }
-
-  // Field name: qy
-  {
-    cdr << ros_message->qy;
-  }
-
-  // Field name: qz
-  {
-    cdr << ros_message->qz;
-  }
-
-  // Field name: qw
-  {
-    cdr << ros_message->qw;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, mocap_interfaces, msg, UnitQuaternion
+      )()->data);
+    if (!callbacks->cdr_serialize(
+        &ros_message->q, cdr))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -128,39 +143,32 @@ static bool _RigidBody__cdr_deserialize(
     cdr >> ros_message->mean_error;
   }
 
-  // Field name: x
+  // Field name: p
   {
-    cdr >> ros_message->x;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, mocap_interfaces, msg, Point
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->p))
+    {
+      return false;
+    }
   }
 
-  // Field name: y
+  // Field name: q
   {
-    cdr >> ros_message->y;
-  }
-
-  // Field name: z
-  {
-    cdr >> ros_message->z;
-  }
-
-  // Field name: qx
-  {
-    cdr >> ros_message->qx;
-  }
-
-  // Field name: qy
-  {
-    cdr >> ros_message->qy;
-  }
-
-  // Field name: qz
-  {
-    cdr >> ros_message->qz;
-  }
-
-  // Field name: qw
-  {
-    cdr >> ros_message->qw;
+    const message_type_support_callbacks_t * callbacks =
+      static_cast<const message_type_support_callbacks_t *>(
+      ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
+        rosidl_typesupport_fastrtps_c, mocap_interfaces, msg, UnitQuaternion
+      )()->data);
+    if (!callbacks->cdr_deserialize(
+        cdr, &ros_message->q))
+    {
+      return false;
+    }
   }
 
   return true;
@@ -198,48 +206,14 @@ size_t get_serialized_size_mocap_interfaces__msg__RigidBody(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name x
-  {
-    size_t item_size = sizeof(ros_message->x);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name y
-  {
-    size_t item_size = sizeof(ros_message->y);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name z
-  {
-    size_t item_size = sizeof(ros_message->z);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name qx
-  {
-    size_t item_size = sizeof(ros_message->qx);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name qy
-  {
-    size_t item_size = sizeof(ros_message->qy);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name qz
-  {
-    size_t item_size = sizeof(ros_message->qz);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
-  // field.name qw
-  {
-    size_t item_size = sizeof(ros_message->qw);
-    current_alignment += item_size +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
-  }
+  // field.name p
+
+  current_alignment += get_serialized_size_mocap_interfaces__msg__Point(
+    &(ros_message->p), current_alignment);
+  // field.name q
+
+  current_alignment += get_serialized_size_mocap_interfaces__msg__UnitQuaternion(
+    &(ros_message->q), current_alignment);
 
   return current_alignment - initial_alignment;
 }
@@ -284,54 +258,27 @@ size_t max_serialized_size_mocap_interfaces__msg__RigidBody(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: x
+  // member: p
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_mocap_interfaces__msg__Point(
+        full_bounded, current_alignment);
+    }
   }
-  // member: y
+  // member: q
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: z
-  {
-    size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: qx
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: qy
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: qz
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
-  }
-  // member: qw
-  {
-    size_t array_size = 1;
-
-    current_alignment += array_size * sizeof(uint64_t) +
-      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment +=
+        max_serialized_size_mocap_interfaces__msg__UnitQuaternion(
+        full_bounded, current_alignment);
+    }
   }
 
   return current_alignment - initial_alignment;

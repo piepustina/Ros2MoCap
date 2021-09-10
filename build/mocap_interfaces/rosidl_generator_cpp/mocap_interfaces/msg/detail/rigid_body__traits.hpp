@@ -10,6 +10,12 @@
 #include <stdint.h>
 #include <type_traits>
 
+// Include directives for member types
+// Member 'p'
+#include "mocap_interfaces/msg/detail/point__traits.hpp"
+// Member 'q'
+#include "mocap_interfaces/msg/detail/unit_quaternion__traits.hpp"
+
 namespace rosidl_generator_traits
 {
 
@@ -27,11 +33,11 @@ inline const char * name<mocap_interfaces::msg::RigidBody>()
 
 template<>
 struct has_fixed_size<mocap_interfaces::msg::RigidBody>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_fixed_size<mocap_interfaces::msg::Point>::value && has_fixed_size<mocap_interfaces::msg::UnitQuaternion>::value> {};
 
 template<>
 struct has_bounded_size<mocap_interfaces::msg::RigidBody>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, has_bounded_size<mocap_interfaces::msg::Point>::value && has_bounded_size<mocap_interfaces::msg::UnitQuaternion>::value> {};
 
 template<>
 struct is_message<mocap_interfaces::msg::RigidBody>

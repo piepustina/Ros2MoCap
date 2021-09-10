@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target world_to_base[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/world_to_base.dir/src/WorldToBase.cpp.o[0m
+[100%] [32m[1mLinking CXX executable world_to_base[0m
+[100%] Built target world_to_base
+-- Install configuration: ""
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/lib/world_to_base/world_to_base
+-- Set runtime path of "/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/lib/world_to_base/world_to_base" to ""
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/ament_index/resource_index/package_run_dependencies/world_to_base
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/ament_index/resource_index/parent_prefix_path/world_to_base
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/environment/ament_prefix_path.sh
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/environment/path.sh
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/environment/path.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/local_setup.bash
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/local_setup.sh
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/local_setup.zsh
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/local_setup.dsv
+-- Installing: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/package.dsv
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/ament_index/resource_index/packages/world_to_base
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/cmake/world_to_baseConfig.cmake
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/cmake/world_to_baseConfig-version.cmake
+-- Up-to-date: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/install/world_to_base/share/world_to_base/package.xml

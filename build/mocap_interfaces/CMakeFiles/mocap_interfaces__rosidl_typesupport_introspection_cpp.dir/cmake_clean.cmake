@@ -1,12 +1,18 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/point__type_support.cpp.o"
   "CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body__type_support.cpp.o"
   "CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body_array__type_support.cpp.o"
+  "CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/unit_quaternion__type_support.cpp.o"
   "libmocap_interfaces__rosidl_typesupport_introspection_cpp.pdb"
   "libmocap_interfaces__rosidl_typesupport_introspection_cpp.so"
+  "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/point__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body__type_support.cpp"
   "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_introspection_cpp.hpp"
   "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/rigid_body_array__type_support.cpp"
+  "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_introspection_cpp.hpp"
+  "rosidl_typesupport_introspection_cpp/mocap_interfaces/msg/detail/unit_quaternion__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

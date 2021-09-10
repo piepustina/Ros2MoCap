@@ -57,31 +57,71 @@ include CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/prog
 # Include the compile flags for this target's objects.
 include CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: rosidl_adapter/mocap_interfaces/msg/RigidBody.idl
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: rosidl_adapter/mocap_interfaces/msg/RigidBodyArray.idl
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/lib/python3.8/site-packages/rosidl_typesupport_introspection_c/__init__.py
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/idl__type_support.c.em
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: /opt/ros/foxy/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: rosidl_adapter/mocap_interfaces/msg/Point.idl
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: rosidl_adapter/mocap_interfaces/msg/UnitQuaternion.idl
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: rosidl_adapter/mocap_interfaces/msg/RigidBody.idl
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h: rosidl_adapter/mocap_interfaces/msg/RigidBodyArray.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
 	/usr/bin/python3 /opt/ros/foxy/lib/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c --generator-arguments-file /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c__arguments.json
 
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_introspection_c.h
 
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c
+
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c
+
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c
 
-rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
+rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c
+
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.o: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.o: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c
+
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c > CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.i
+
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c -o CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.s
+
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.o: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.o: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c
+
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c > CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.i
+
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c -o CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.s
 
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c
 
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.i: cmake_force
@@ -94,7 +134,7 @@ CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_types
 
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o   -c /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c
 
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.i: cmake_force
@@ -107,12 +147,16 @@ CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_types
 
 # Object files for target mocap_interfaces__rosidl_typesupport_introspection_c
 mocap_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
+"CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.o" \
+"CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.o" \
 "CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o" \
 "CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o"
 
 # External object files for target mocap_interfaces__rosidl_typesupport_introspection_c
 mocap_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
+libmocap_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c.o
+libmocap_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c.o
 libmocap_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c.o
 libmocap_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c.o
 libmocap_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/build.make
@@ -121,7 +165,7 @@ libmocap_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/li
 libmocap_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librosidl_runtime_c.so
 libmocap_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/foxy/lib/librcutils.so
 libmocap_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libmocap_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libmocap_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -133,8 +177,12 @@ CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/clean
 
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__rosidl_typesupport_introspection_c.h
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__rosidl_typesupport_introspection_c.h
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__rosidl_typesupport_introspection_c.h
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__rosidl_typesupport_introspection_c.h
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/point__type_support.c
+CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/unit_quaternion__type_support.c
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body__type_support.c
 CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/mocap_interfaces/msg/detail/rigid_body_array__type_support.c
 	cd /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles/mocap_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)

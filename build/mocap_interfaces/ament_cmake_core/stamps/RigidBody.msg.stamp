@@ -6,12 +6,6 @@ bool valid
 # mean error of the estimate
 float64 mean_error
 # Position of the body
-float64 x
-float64 y
-float64 z
-#Orientation of the body as quaternion
-float64 qx
-float64 qy
-float64 qz
-float64 qw
-
+Point p
+#Orientation of the body as unit quaternion
+UnitQuaternion q

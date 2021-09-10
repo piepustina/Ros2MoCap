@@ -53,6 +53,8 @@ CMAKE_BINARY_DIR = /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_
 # Include the progress variables for this target.
 include CMakeFiles/mocap_interfaces.dir/progress.make
 
+CMakeFiles/mocap_interfaces: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces/msg/Point.msg
+CMakeFiles/mocap_interfaces: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces/msg/UnitQuaternion.msg
 CMakeFiles/mocap_interfaces: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces/msg/RigidBody.msg
 CMakeFiles/mocap_interfaces: /home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/src/mocap_interfaces/msg/RigidBodyArray.msg
 

@@ -56,9 +56,13 @@ include mocap_interfaces__py/CMakeFiles/mocap_interfaces__py.dir/progress.make
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_c.c
+mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_point.py
+mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion.py
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body.py
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array.py
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/__init__.py
+mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_point_s.c
+mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c
 mocap_interfaces__py/CMakeFiles/mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c
 
@@ -76,6 +80,8 @@ rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_f
 rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_msg.py.em
 rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/foxy/share/rosidl_generator_py/resource/_srv.py.em
+rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mocap_interfaces/msg/Point.idl
+rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mocap_interfaces/msg/UnitQuaternion.idl
 rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mocap_interfaces/msg/RigidBody.idl
 rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/mocap_interfaces/msg/RigidBodyArray.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pietro/Scrivania/TESI/ROS2/MoCap/Ros2MoCap/build/mocap_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
@@ -87,6 +93,12 @@ rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_i
 rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_c.c: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_c.c
 
+rosidl_generator_py/mocap_interfaces/msg/_point.py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/msg/_point.py
+
+rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion.py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion.py
+
 rosidl_generator_py/mocap_interfaces/msg/_rigid_body.py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/msg/_rigid_body.py
 
@@ -95,6 +107,12 @@ rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array.py: rosidl_generator_
 
 rosidl_generator_py/mocap_interfaces/msg/__init__.py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/msg/__init__.py
+
+rosidl_generator_py/mocap_interfaces/msg/_point_s.c: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/msg/_point_s.c
+
+rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c
 
 rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c
@@ -106,9 +124,13 @@ mocap_interfaces__py: mocap_interfaces__py/CMakeFiles/mocap_interfaces__py
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/_mocap_interfaces_s.ep.rosidl_typesupport_c.c
+mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_point.py
+mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion.py
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body.py
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array.py
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/__init__.py
+mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_point_s.c
+mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_unit_quaternion_s.c
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_s.c
 mocap_interfaces__py: rosidl_generator_py/mocap_interfaces/msg/_rigid_body_array_s.c
 mocap_interfaces__py: mocap_interfaces__py/CMakeFiles/mocap_interfaces__py.dir/build.make

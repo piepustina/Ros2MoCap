@@ -14,6 +14,12 @@
 #include <vector>
 
 
+// Include directives for member types
+// Member 'p'
+#include "mocap_interfaces/msg/detail/point__struct.hpp"
+// Member 'q'
+#include "mocap_interfaces/msg/detail/unit_quaternion__struct.hpp"
+
 #ifndef _WIN32
 # define DEPRECATED__mocap_interfaces__msg__RigidBody __attribute__((deprecated))
 #else
@@ -33,6 +39,8 @@ struct RigidBody_
   using Type = RigidBody_<ContainerAllocator>;
 
   explicit RigidBody_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : p(_init),
+    q(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -40,32 +48,19 @@ struct RigidBody_
       this->id = 0ll;
       this->valid = false;
       this->mean_error = 0.0;
-      this->x = 0.0;
-      this->y = 0.0;
-      this->z = 0.0;
-      this->qx = 0.0;
-      this->qy = 0.0;
-      this->qz = 0.0;
-      this->qw = 0.0;
     }
   }
 
   explicit RigidBody_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : p(_alloc, _init),
+    q(_alloc, _init)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->id = 0ll;
       this->valid = false;
       this->mean_error = 0.0;
-      this->x = 0.0;
-      this->y = 0.0;
-      this->z = 0.0;
-      this->qx = 0.0;
-      this->qy = 0.0;
-      this->qz = 0.0;
-      this->qw = 0.0;
     }
   }
 
@@ -79,27 +74,12 @@ struct RigidBody_
   using _mean_error_type =
     double;
   _mean_error_type mean_error;
-  using _x_type =
-    double;
-  _x_type x;
-  using _y_type =
-    double;
-  _y_type y;
-  using _z_type =
-    double;
-  _z_type z;
-  using _qx_type =
-    double;
-  _qx_type qx;
-  using _qy_type =
-    double;
-  _qy_type qy;
-  using _qz_type =
-    double;
-  _qz_type qz;
-  using _qw_type =
-    double;
-  _qw_type qw;
+  using _p_type =
+    mocap_interfaces::msg::Point_<ContainerAllocator>;
+  _p_type p;
+  using _q_type =
+    mocap_interfaces::msg::UnitQuaternion_<ContainerAllocator>;
+  _q_type q;
 
   // setters for named parameter idiom
   Type & set__id(
@@ -120,46 +100,16 @@ struct RigidBody_
     this->mean_error = _arg;
     return *this;
   }
-  Type & set__x(
-    const double & _arg)
+  Type & set__p(
+    const mocap_interfaces::msg::Point_<ContainerAllocator> & _arg)
   {
-    this->x = _arg;
+    this->p = _arg;
     return *this;
   }
-  Type & set__y(
-    const double & _arg)
+  Type & set__q(
+    const mocap_interfaces::msg::UnitQuaternion_<ContainerAllocator> & _arg)
   {
-    this->y = _arg;
-    return *this;
-  }
-  Type & set__z(
-    const double & _arg)
-  {
-    this->z = _arg;
-    return *this;
-  }
-  Type & set__qx(
-    const double & _arg)
-  {
-    this->qx = _arg;
-    return *this;
-  }
-  Type & set__qy(
-    const double & _arg)
-  {
-    this->qy = _arg;
-    return *this;
-  }
-  Type & set__qz(
-    const double & _arg)
-  {
-    this->qz = _arg;
-    return *this;
-  }
-  Type & set__qw(
-    const double & _arg)
-  {
-    this->qw = _arg;
+    this->q = _arg;
     return *this;
   }
 
@@ -214,25 +164,10 @@ struct RigidBody_
     if (this->mean_error != other.mean_error) {
       return false;
     }
-    if (this->x != other.x) {
+    if (this->p != other.p) {
       return false;
     }
-    if (this->y != other.y) {
-      return false;
-    }
-    if (this->z != other.z) {
-      return false;
-    }
-    if (this->qx != other.qx) {
-      return false;
-    }
-    if (this->qy != other.qy) {
-      return false;
-    }
-    if (this->qz != other.qz) {
-      return false;
-    }
-    if (this->qw != other.qw) {
+    if (this->q != other.q) {
       return false;
     }
     return true;
