@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(mocap_pub)
+project(mocap_optitrack_pub)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -15,7 +15,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 # Add the custom interfaces for the mocap system
 find_package(rclcpp REQUIRED)#publisher
-find_package(mocap_interfaces REQUIRED)
+find_package(mocap_optitrack_interfaces REQUIRED)
 
 #Include the headers for the MoCap class
 include_directories(include/MoCapPublisher)
@@ -31,17 +31,17 @@ link_directories(${CMAKE_SOURCE_DIR}/lib)
 
 
 #Create the executables
-add_executable(mocap_pub src/MoCapPublisher.cpp src/MoCapNatNetClient.cpp)
-ament_target_dependencies(mocap_pub rclcpp mocap_interfaces)
+add_executable(mocap_optitrack_pub src/MoCapPublisher.cpp src/MoCapNatNetClient.cpp)
+ament_target_dependencies(mocap_optitrack_pub rclcpp mocap_optitrack_interfaces)
 
 
 
 #Add all the used libraries to the project
-target_link_libraries(mocap_pub NatNet)#in the folder ./lib there must be a file libNatNet.so
+target_link_libraries(mocap_optitrack_pub NatNet)#in the folder ./lib there must be a file libNatNet.so
 
 
 install(TARGETS 
-  mocap_pub
+  mocap_optitrack_pub
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

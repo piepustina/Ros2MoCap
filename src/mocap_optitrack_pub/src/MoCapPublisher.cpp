@@ -14,7 +14,7 @@ using namespace std;
 
 MoCapPublisher::MoCapPublisher(): Node("mocap_publisher")
 {
-  this->publisher_ = this->create_publisher<mocap_interfaces::msg::RigidBodyArray>("rigid_body_topic", 10);
+  this->publisher_ = this->create_publisher<mocap_optitrack_interfaces::msg::RigidBodyArray>("rigid_body_topic", 10);
 }
 
 // Method that send over the ROS network the data of a rigid body
@@ -22,7 +22,7 @@ void MoCapPublisher::sendRigidBodyMessage(sRigidBodyData* bodies, int nRigidBodi
 {
   printf("Sending message containing %d Rigid Bodies.\n\n", nRigidBodies);
   // Publish the message
-  mocap_interfaces::msg::RigidBodyArray msg;
+  mocap_optitrack_interfaces::msg::RigidBodyArray msg;
   
   // Loop over all the rigid bodies
   for(int i=0; i < nRigidBodies; i++)
@@ -39,7 +39,7 @@ void MoCapPublisher::sendRigidBodyMessage(sRigidBodyData* bodies, int nRigidBodi
       bodies[i].qw);
 
       //Create the rigid body message
-      mocap_interfaces::msg::RigidBody rb;
+      mocap_optitrack_interfaces::msg::RigidBody rb;
       rb.id = bodies[i].ID;
       rb.valid =  bodies[i].params & 0x01;
       rb.mean_error = bodies[i].MeanError;

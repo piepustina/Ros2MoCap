@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(world_to_base)
+project(mocap_optitrack_w2b)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
@@ -15,18 +15,18 @@ find_package(ament_cmake REQUIRED)
 
 # Add the custom interfaces for the mocap system
 find_package(rclcpp REQUIRED)
-find_package(mocap_interfaces REQUIRED)
+find_package(mocap_optitrack_interfaces REQUIRED)
 
 #Include the headers
 include_directories(include include/Eigen)
 
 #Create the executables
-add_executable(world_to_base src/WorldToBase.cpp)
-ament_target_dependencies(world_to_base rclcpp mocap_interfaces)
+add_executable(mocap_optitrack_w2b src/WorldToBase.cpp)
+ament_target_dependencies(mocap_optitrack_w2b rclcpp mocap_optitrack_interfaces)
 
 
 install(TARGETS 
-  world_to_base
+  mocap_optitrack_w2b
   DESTINATION lib/${PROJECT_NAME})
 
 ament_package()

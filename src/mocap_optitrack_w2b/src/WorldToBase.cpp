@@ -12,12 +12,12 @@ WorldToBase::WorldToBase(): Node("mo_cap_subscriber")
   //std::cout << this->R_0_B << std::endl;
   //Save the offset
   this->offset << INITIAL_OFFSET_X, INITIAL_OFFSET_Y, INITIAL_OFFSET_Z;
-  this->subscription_ = this->create_subscription<mocap_interfaces::msg::RigidBodyArray>(
+  this->subscription_ = this->create_subscription<mocap_optitrack_interfaces::msg::RigidBodyArray>(
     "rigid_body_topic", 10, std::bind(&WorldToBase::rigid_body_topic_callback, this, _1));
 }
 
 //Callback to receive rigid body messages
-void WorldToBase::rigid_body_topic_callback(const mocap_interfaces::msg::RigidBodyArray::SharedPtr msg) const
+void WorldToBase::rigid_body_topic_callback(const mocap_optitrack_interfaces::msg::RigidBodyArray::SharedPtr msg) const
 {
   //RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->data.c_str());
   // Transform the pose of all the rigid bodies from the frame of the motion capture system to the base frame of the robot
@@ -25,7 +25,7 @@ void WorldToBase::rigid_body_topic_callback(const mocap_interfaces::msg::RigidBo
 }
 
 // Method that transforms the pose of the rigid bodies expressed in the motion capture system into the base frame of the robot
-void WorldToBase::transformPose(const mocap_interfaces::msg::RigidBodyArray::SharedPtr msg) const
+void WorldToBase::transformPose(const mocap_optitrack_interfaces::msg::RigidBodyArray::SharedPtr msg) const
 {
   Vector3f P, P_base;//P_base is the position of the robot base recorded by Motive
   Vector4f P_1;
